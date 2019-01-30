@@ -1,0 +1,56 @@
+.Contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $PurpleLight;
+  .Contact__container {
+    display: flex;
+    justify-content: space-between;
+    width: $Contact__container__width;
+    height: $Contact__container__height;
+    background: $White;
+    border-radius: 50px;
+    padding: 20px;
+    .Contact__container__children {
+      width: $Contact__container__width;
+      height: $Contact__container__height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .Contact__container__children__image {
+        width: calc(#{$Contact__container__width} / 2.1);
+        height: 50vh;
+      }
+      .Form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Form__container {
+          display: flex;
+          flex-direction: column;
+          button {
+            width: 30vw;
+            margin-top: 20px;
+          }
+          input,
+          textarea {
+            // ? 40px stands for padding: 20px on Right & Left on <Input />
+            width: calc(30vw - 40px);
+            margin: 20px 0;
+          }
+        }
+        .Form__title {
+          align-self: flex-start;
+          color: $PurpleDark;
+          font-size: 33px;
+          margin: 0;
+          font-family: $Dosis;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+        }
+      }
+    }
+  }
+}

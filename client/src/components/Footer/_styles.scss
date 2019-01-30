@@ -1,0 +1,24 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $PurpleBasic;
+  height: $Footer__height;
+  .Footer__contact__button {
+    align-self: center;
+    margin-top: 50px;
+    button {
+      box-shadow: 10px 16px 40px 0 rgba(255, 84, 117, 0.46);
+    }
+  }
+  .Footer__socials {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.04);
+    .Footer__socials__icon {
+      width: 36px;
+      height: 36px;
+      margin: 0 10px;
+      padding: 20px 0;
+    }
+  }
+}

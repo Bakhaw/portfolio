@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Bakhaw/portfolio.git",
+  "author": "Faissal <faissal.hattou@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production nodemon -r esm server.js",
+    "dev": "nodemon -r esm server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "esm": "^3.1.4",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "nodemon": "^1.18.9"
+  }
+}

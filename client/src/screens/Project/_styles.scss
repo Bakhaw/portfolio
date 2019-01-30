@@ -1,0 +1,15 @@
+.Project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 10px 0;
+  }
+  .carousel {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
+}
