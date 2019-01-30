@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
+import Spinner from '../../components/Spinner';
 
 class Form extends Component {
   state = {
+    isLoading: false,
     email: {
       error: false,
       value: ''
@@ -18,6 +20,10 @@ class Form extends Component {
 
   handleChange = ({ target: { name, value } }) => {
     this.setState({ [name]: { error: false, value } });
+  };
+
+  toggleLoading = async bool => {
+    await this.setState({ isLoading: bool });
   };
 
   toggleError = key => {
@@ -47,7 +53,9 @@ class Form extends Component {
   };
 
   // TODO handle error in .catch(err)
-  handleFormSubmit = () => {
+  handleFormSubmit = async () => {
+    await this.toggleLoading(true);
+
     const url = '/api/sendMail';
     const data = new URLSearchParams();
     const { email, message } = this.state;
@@ -59,8 +67,9 @@ class Form extends Component {
       data,
       url
     })
-      .then(res => {
+      .then(async res => {
         if (res.data.msg === 'success') {
+          await this.toggleLoading(false);
           this.props.toggleMailSent();
         }
       })
@@ -68,7 +77,7 @@ class Form extends Component {
   };
 
   render() {
-    const { email, message } = this.state;
+    const { email, isLoading, message } = this.state;
 
     return (
       <div className='Form'>
@@ -91,7 +100,7 @@ class Form extends Component {
             value={message.value}
           />
           <Button backgroundColor='#827FFC' onClick={this.checkFormErrors}>
-            Submit
+            {isLoading ? <Spinner /> : 'Submit'}
           </Button>
         </div>
       </div>
