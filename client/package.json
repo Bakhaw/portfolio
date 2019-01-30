@@ -19,6 +19,7 @@
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "classnames": "^2.2.6",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
