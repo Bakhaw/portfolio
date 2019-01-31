@@ -1,7 +1,7 @@
 import React from 'react';
 
 function CardMedia({ backgroundColor, projectName }) {
-  const imgUrl = require(`../../assets/projects/${projectName}/banner.png`);
+  const imgUrl = require(`../../assets/projects/${projectName}/banner.webp`);
   return (
     <div
       className='Card__CardMedia'

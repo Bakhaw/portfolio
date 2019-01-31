@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import ContactUsImg from '../../assets/images/contact_us.svg';
+import ContactUsImg from '../../assets/images/contact_us.webp';
 import Form from './Form';
 import MailSent from './MailSent';
 import Socials from '../../components/Socials';

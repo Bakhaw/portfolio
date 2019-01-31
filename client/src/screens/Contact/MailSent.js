@@ -1,5 +1,5 @@
 import React from 'react';
-import MailSentImg from '../../assets/images/mail_sent.svg';
+import MailSentImg from '../../assets/images/mail_sent.webp';
 
 function MailSent() {
   const joy = '\u{1F389}';

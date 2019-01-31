@@ -19,7 +19,7 @@ function Project({ match }) {
         <div>
           <img
             alt={`${projectName} screen shot`}
-            src={require(`../../assets/projects/${projectName}/banner.png`)}
+            src={require(`../../assets/projects/${projectName}/banner.webp`)}
           />
         </div>
         {[
@@ -30,7 +30,7 @@ function Project({ match }) {
                 <div key={index}>
                   <img
                     alt={`${projectName} screen shot`}
-                    src={require(`../../assets/projects/${projectName}/step_${index}.png`)}
+                    src={require(`../../assets/projects/${projectName}/step_${index}.webp`)}
                   />
                 </div>
               );

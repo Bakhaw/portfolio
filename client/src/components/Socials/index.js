@@ -23,7 +23,7 @@ function Socials() {
           <img
             alt={`icône ${icon}`}
             className='Socials__icon'
-            src={require(`../../assets/socials/${icon}.svg`)}
+            src={require(`../../assets/socials/${icon}.webp`)}
           />
         </a>
       ))}
