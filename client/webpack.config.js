@@ -34,9 +34,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.(webp|gif|png|jpe?g|svg)$/i,
+        test: /\.(webp|ico|gif|png|jpe?g|svg)$/i,
         use: [
-          'file-loader',
+          'file-loader?name=[name].[ext]',
           {
             loader: 'image-webpack-loader',
             options: {
@@ -58,7 +58,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './public/index.html',
+      template: './src/index.html',
       filename: './index.html'
     })
   ]
