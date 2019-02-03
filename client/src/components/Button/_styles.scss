@@ -11,6 +11,10 @@
   font-weight: 600;
   letter-spacing: 1.5px;
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.95);
+    outline: none;
   }
 }

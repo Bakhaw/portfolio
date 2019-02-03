@@ -8,7 +8,7 @@ function Footer() {
     <div className='Footer'>
       <div className='Footer__contact__button'>
         <Link to='/contact'>
-          <Button backgroundColor='#ef4b6c'>Contact me !</Button>
+          <Button backgroundColor='#ef4b6c'>Contact me</Button>
         </Link>
       </div>
       <Socials />

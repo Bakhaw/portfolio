@@ -99,7 +99,7 @@ class Form extends Component {
             type='textarea'
             value={message.value}
           />
-          <Button backgroundColor='#827FFC' onClick={this.checkFormErrors}>
+          <Button backgroundColor='#142836' onClick={this.checkFormErrors}>
             {isLoading ? <Spinner /> : 'Submit'}
           </Button>
         </div>

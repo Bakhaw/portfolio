@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import ContactUsImg from '../../assets/images/contact_us.webp';
+import ContactUsImg from '../../assets/images/paper-plane.svg';
 import Form from './Form';
 import MailSent from './MailSent';
+import PrevButton from '../../components/PrevButton';
 import Socials from '../../components/Socials';
 
 class Contact extends Component {
@@ -17,6 +18,7 @@ class Contact extends Component {
     const { mailSent } = this.state;
     return (
       <div className='Contact'>
+        <PrevButton history={this.props.history} />
         <div className='Contact__container'>
           {mailSent ? (
             <MailSent />

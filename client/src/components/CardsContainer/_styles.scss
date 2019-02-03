@@ -23,6 +23,7 @@
       .Card__CardTitle {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
+        border-left: none;
         @include xs {
           border-radius: unset;
           border-bottom-right-radius: 15px;
@@ -49,6 +50,7 @@
       .Card__CardTitle {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+        border-right: none;
         @include xs {
           border-radius: unset;
           border-bottom-right-radius: 15px;

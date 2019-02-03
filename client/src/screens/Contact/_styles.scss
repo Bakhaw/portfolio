@@ -11,13 +11,16 @@
 }
 
 .Contact {
-  min-height: 100vh;
+  min-height: calc(100vh - 40px); // 40px === padding: 20px
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: $PurpleBasic;
+  background: $Blue;
   position: relative;
+  .PrevButton {
+    align-self: flex-start;
+  }
   .Contact__container {
     display: flex;
     justify-content: space-between;
@@ -32,7 +35,6 @@
       justify-content: center;
       align-items: center;
       .Contact__container__children__image {
-        width: calc(#{$Contact__container__width} / 2.1);
         height: 45vh;
       }
       .Form {

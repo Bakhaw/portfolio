@@ -1,13 +1,15 @@
 import React from 'react';
 
 function CardMedia({ backgroundColor, projectName }) {
-  const imgUrl = require(`../../assets/projects/${projectName}/banner.webp`);
+  const imgUrl = `src/assets/projects/${projectName}/banner.webp`;
   return (
     <div
       className='Card__CardMedia'
-      style={{
-        background: backgroundColor
-      }}
+      style={
+        {
+          // background: backgroundColor
+        }
+      }
     >
       <div
         className='Card__CardMedia__background'
