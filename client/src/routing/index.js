@@ -3,6 +3,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import Contact from '../screens/Contact';
 import Home from '../screens/Home';
 import Project from '../screens/Project';
+import Skills from '../screens/Skills';
 
 function Router() {
   return (
@@ -10,6 +11,7 @@ function Router() {
       <Switch>
         {/* :projectName is the associated to the current project images folder */}
         <Route path='/project/:projectName' component={Project} />
+        <Route path='/skills' component={Skills} />
         <Route path='/contact' component={Contact} />
         <Route path='/' component={Home} />
       </Switch>
