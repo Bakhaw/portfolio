@@ -1,5 +1,4 @@
 .NavBar {
-  margin: 50px 0 80px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,10 +11,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(-25px);
     .NavBar__NavBrand__image {
-      margin-right: 10px;
-      width: 90px;
+      width: 50px;
     }
   }
   .NavBar__NavLinks {
