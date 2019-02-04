@@ -1,3 +1,4 @@
+// ? Font
 $Dosis: 'Dosis', sans-serif;
 
 // ? <Card />
@@ -15,4 +16,10 @@ $Contact__container__height: 75vh;
 $NavBar__height: 8vh;
 
 // ? <Footer />
-$Footer__height: 250px;
+$Footer__height: 150px;
+
+// ? <ContentWrapper />
+$ContentWrapper__height: calc(
+  100vh - (#{$NavBar__height} + #{$Footer__height})
+);
+$ContentWrapper__width: auto;
