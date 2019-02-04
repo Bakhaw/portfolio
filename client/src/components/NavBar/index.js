@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'react-router-dom/Link';
 import NavBrand from './NavBrand';
 import NavLink from './NavLink';
 
@@ -24,9 +25,9 @@ const routes = [
 function NavBar({ location }) {
   return (
     <div className='NavBar'>
-      <NavLink to='/'>
+      <Link to='/'>
         <NavBrand />
-      </NavLink>
+      </Link>
       <div className='NavBar__NavLinks'>
         {routes.map(({ text, to }, index) => (
           <NavLink key={index} location={location} to={to}>
