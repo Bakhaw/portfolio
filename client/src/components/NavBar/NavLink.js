@@ -1,9 +1,17 @@
 import React from 'react';
+import classNames from 'classnames';
 import Link from 'react-router-dom/Link';
 
-function NavLink({ children, to }) {
+function NavLink({ children, location, to }) {
+  const isRouteActive = to === location;
   return (
-    <Link className='NavBar__NavLinks__NavLink' to={to}>
+    <Link
+      className={classNames(
+        'NavBar__NavLinks__NavLink',
+        isRouteActive && 'NavBar__NavLinks__NavLink__active'
+      )}
+      to={to}
+    >
       {children}
     </Link>
   );

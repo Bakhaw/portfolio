@@ -5,11 +5,9 @@ function CardMedia({ backgroundColor, projectName }) {
   return (
     <div
       className='Card__CardMedia'
-      style={
-        {
-          // background: backgroundColor
-        }
-      }
+      style={{
+        background: backgroundColor
+      }}
     >
       <div
         className='Card__CardMedia__background'

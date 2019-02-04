@@ -1,34 +1,43 @@
 .NavBar {
+  margin: 50px 0 80px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: $NavBar__height;
-  padding: 0 150px;
+  padding: 0 150px 10px 150px;
+  background-color: $White;
+  box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.12),
+    0 5px 15px rgba(112, 109, 216, 0.06);
   .NavBar__NavBrand {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transform: translateY(-25px);
     .NavBar__NavBrand__image {
-      height: 42px;
-      width: 42px;
-    }
-    .NavBar__NavBrand__text {
-      color: $Black;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: $Dosis;
+      margin-right: 10px;
+      width: 90px;
     }
   }
   .NavBar__NavLinks {
-    width: 25vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 100%;
   }
   .NavBar__NavLinks__NavLink {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $Black;
-    font-family: $Dosis;
-    font-size: 20px;
+    font-size: 22px;
+    height: 100%;
+    text-decoration: none;
+    margin: 0 10px;
+    border-top: 10px solid transparent;
+  }
+  .NavBar__NavLinks__NavLink__active {
+    border-top: 10px solid $PurpleLight;
+    color: $PurpleLight;
+    font-weight: bold;
   }
 }

@@ -8,6 +8,10 @@ const routes = [
     to: '/'
   },
   {
+    text: 'Skills',
+    to: '/skills'
+  },
+  {
     text: 'Portfolio',
     to: '/portfolio'
   },
@@ -17,7 +21,7 @@ const routes = [
   }
 ];
 
-function NavBar() {
+function NavBar({ location }) {
   return (
     <div className='NavBar'>
       <NavLink to='/'>
@@ -25,7 +29,7 @@ function NavBar() {
       </NavLink>
       <div className='NavBar__NavLinks'>
         {routes.map(({ text, to }, index) => (
-          <NavLink key={index} to={to}>
+          <NavLink key={index} location={location} to={to}>
             {text}
           </NavLink>
         ))}

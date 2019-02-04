@@ -15,7 +15,7 @@ function CardTitle({ backgroundColor, bannerTitle, projectName, tags }) {
           <Button backgroundColor={backgroundColor}>View project</Button>
         </Link>
       </div>
-      <Tags backgroundColor={backgroundColor} tags={tags} />
+      {/* <Tags backgroundColor={backgroundColor} tags={tags} /> */}
     </div>
   );
 }

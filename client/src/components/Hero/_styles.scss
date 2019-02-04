@@ -1,0 +1,33 @@
+.Hero {
+  padding: 20px 50px;
+  margin: auto;
+  border-radius: 0.5rem;
+  height: 250px;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // box-shadow: 5px 15px 35px 0 rgba(42, 51, 83, 0.12),
+  //   0 5px 15px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.75);
+  .Hero__image {
+    height: auto;
+    width: 150px;
+    margin: 0;
+    border-radius: 50%;
+    transform: translateY(-60px);
+    background: $White;
+    border: 5px solid $White;
+    display: block;
+  }
+  .Hero__title {
+    color: $Black;
+    font-weight: bold;
+  }
+  .Hero__text {
+    color: $Black;
+    margin: 5px 0;
+    transform: translateY(-40px);
+  }
+}

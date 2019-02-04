@@ -1,13 +1,17 @@
 import React from 'react';
 import CardsContainer from '../../components/CardsContainer';
 import Footer from '../../components/Footer';
-import Title from '../../components/Title';
 
-function Home() {
+import Hero from '../../components/Hero';
+import NavBar from '../../components/NavBar';
+
+function Home({ location }) {
   return (
     <div>
-      <Title />
-      <CardsContainer />
+      <NavBar location={location.pathname} />
+
+      <Hero />
+      {/* <CardsContainer /> */}
       <Footer />
     </div>
   );
