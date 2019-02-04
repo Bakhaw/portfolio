@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import LeftArrow from '../../assets/images/left-arrow.svg';
 
 function PrevButton({ history }) {
@@ -9,4 +10,4 @@ function PrevButton({ history }) {
   );
 }
 
-export default PrevButton;
+export default withRouter(PrevButton);
