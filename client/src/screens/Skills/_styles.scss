@@ -1,7 +1,12 @@
 .Skills {
-  display: flex;
-  flex-wrap: wrap;
-  img {
-    width: 250px;
+  .Skills__list {
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    .Skills__list__listitem {
+      text-align: center;
+      img {
+        width: 250px;
+      }
+    }
   }
 }

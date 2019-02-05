@@ -32,12 +32,15 @@ const skills = [
 function Skills() {
   return (
     <div className='Skills'>
-      {skills.map((skill, index) => (
-        <div>
-          <h2>{skill.name}</h2>
-          <img src={skill.img} />
-        </div>
-      ))}
+      <h1>Skills</h1>
+      <ul className='Skills__list'>
+        {skills.map(({ img, name }, index) => (
+          <li key={index} className='Skills__list__listitem'>
+            <h2>{name}</h2>
+            <img src={img} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
