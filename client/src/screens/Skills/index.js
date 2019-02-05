@@ -4,40 +4,52 @@ const baseImgPath = 'src/assets/images';
 
 const skills = [
   {
-    name: 'Teamwork',
-    img: `${baseImgPath}/teamwork.svg`
+    img: `${baseImgPath}/react.svg`,
+    name: 'Technos',
+    tags: ['JavaScript', 'React Lover \u{1F37F}', 'Node.js']
   },
   {
-    name: 'Adaptatability',
-    img: `${baseImgPath}/adaptability.svg`
+    img: `${baseImgPath}/superhero.svg`,
+    name: 'Investment',
+    tags: ['Passionate', 'Ambitious', 'Rigorous']
   },
   {
-    name: 'Creative',
-    img: `${baseImgPath}/creative.svg`
+    img: `${baseImgPath}/active.svg`,
+    name: 'Activity',
+    tags: ['Github addict', 'Up-to-date', 'Curious']
   },
   {
-    name: 'Active',
-    img: `${baseImgPath}/active.svg`
+    img: `${baseImgPath}/creative.svg`,
+    name: 'Personality',
+    tags: ['Joyful \u{1F601}', 'Patient', 'Leadership']
   },
   {
-    name: 'React Lover \u{1F37F}',
-    img: `${baseImgPath}/react.svg`
+    img: `${baseImgPath}/adaptability.svg`,
+    name: 'Productivity',
+    tags: ['Creative', 'Efficient', 'Independent']
   },
   {
-    name: 'Passion & Motivation',
-    img: `${baseImgPath}/superhero.svg`
+    img: `${baseImgPath}/teamwork.svg`,
+    name: 'Teamworking',
+    tags: ['Sociable', 'Attentive', 'Enterprising']
   }
 ];
 
 function Skills() {
   return (
     <div className='Skills'>
-      <h1>Skills</h1>
       <ul className='Skills__list'>
-        {skills.map(({ img, name }, index) => (
+        {skills.map(({ img, name, tags }, index) => (
           <li key={index} className='Skills__list__listitem'>
-            <h2>{name}</h2>
-            <img src={img} />
+            <div className='Skills__list__listitem__header'>
+              <img src={img} />
+              <h2>{name}</h2>
+            </div>
+            <ul>
+              {tags.map((tag, i) => (
+                <li>{tag}</li>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>

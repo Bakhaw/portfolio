@@ -1,11 +1,40 @@
 .Skills {
   .Skills__list {
     display: grid;
-    grid-template-columns: repeat(3, 33.333%);
+    grid-template-columns: repeat(3, 25vw);
+    gap: 20px 80px;
+    justify-content: center;
     .Skills__list__listitem {
-      text-align: center;
-      img {
-        width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      height: 220px;
+      border-radius: 0.5rem;
+      box-shadow: 0 15px 30px 0 rgba(112, 109, 216, 0.3),
+        0 5px 15px rgba(112, 109, 216, 0.06);
+      background: rgba(255, 255, 255, 0.75);
+      .Skills__list__listitem__header {
+        text-align: center;
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        h2 {
+          color: $PurpleDark;
+          margin: 0;
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+      p {
+        color: $PurpleDark;
+        font-size: 25px;
+        margin: 0;
+        width: 100%;
+        word-break: break-all;
+        align-self: center;
       }
     }
   }
