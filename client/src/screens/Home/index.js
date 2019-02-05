@@ -1,13 +1,12 @@
 import React from 'react';
-import Footer from '../../components/Footer';
+import ContentWrapper from '../../components/ContentWrapper';
 import Hero from '../../components/Hero';
 
 function Home() {
   return (
-    <div>
+    <ContentWrapper>
       <Hero />
-      <Footer />
-    </div>
+    </ContentWrapper>
   );
 }
 
