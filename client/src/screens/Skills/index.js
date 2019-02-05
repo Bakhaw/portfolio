@@ -15,7 +15,7 @@ function Skills() {
               </div>
               <ul>
                 {tags.map((tag, i) => (
-                  <li>{tag}</li>
+                  <li key={i}>{tag}</li>
                 ))}
               </ul>
             </li>

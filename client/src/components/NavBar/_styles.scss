@@ -5,14 +5,18 @@
   height: $NavBar__height;
   padding: 0 150px 10px 150px;
   background-color: $White;
-  box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.12),
+  box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.25),
     0 5px 15px rgba(112, 109, 216, 0.06);
+  margin-top: 35px;
   .NavBar__NavBrand {
     display: flex;
     justify-content: space-around;
     align-items: center;
     .NavBar__NavBrand__image {
-      width: 50px;
+      width: 90px;
+      margin-bottom: 30px;
+      -webkit-filter: drop-shadow(10px 10px 10px rgba(112, 109, 216, 0.12));
+      filter: drop-shadow(10px 10px 10px rgba(112, 109, 216, 0.12));
     }
   }
   .NavBar__NavLinks {

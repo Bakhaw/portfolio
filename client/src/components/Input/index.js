@@ -1,4 +1,5 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
 import classNames from 'classnames';
 import InputError from './InputError';
 
@@ -9,17 +10,14 @@ function Input({ error, name, onChange, placeholder, type, value }) {
   if (type === 'textarea') {
     return (
       <div>
-        <textarea
-          className={classNames(
-            'Input',
-            'Input__textarea',
-            error && 'Input__error'
-          )}
+        <TextField
+          label={placeholder}
+          margin='normal'
+          multiline
           name={name}
-          placeholder={placeholder}
-          type={type}
           onChange={onChange}
           rows='4'
+          type={type}
           value={value}
         />
         <InputError
@@ -31,14 +29,17 @@ function Input({ error, name, onChange, placeholder, type, value }) {
   } else {
     return (
       <div>
-        <input
-          className={classNames('Input', error && 'Input__error')}
+        <TextField
+          label={placeholder}
+          margin='normal'
           name={name}
-          placeholder={placeholder}
-          type={type}
           onChange={onChange}
+          type={type}
           value={value}
         />
+        {/* <input
+          className={classNames('Input', error && 'Input__error')}
+        /> */}
         <InputError
           error={error}
           text={`I need to know your email to answer ${lol}`}

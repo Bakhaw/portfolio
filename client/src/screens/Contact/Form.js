@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Icon from '@material-ui/core/Icon';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import Spinner from '../../components/Spinner';
@@ -89,6 +90,11 @@ class Form extends Component {
             onChange={this.handleChange}
             placeholder='Email'
             type='email'
+            InputProps={{
+              classes: {
+                input: { color: 'red' }
+              }
+            }}
             value={email.value}
           />
           <Input
@@ -99,8 +105,9 @@ class Form extends Component {
             type='textarea'
             value={message.value}
           />
-          <Button backgroundColor='#142836' onClick={this.checkFormErrors}>
-            {isLoading ? <Spinner /> : 'Submit'}
+          <Button backgroundColor='#F4AB33' onClick={this.checkFormErrors}>
+            {isLoading ? <Spinner /> : 'Send'}
+            <Icon style={{ fontSize: 20 }}>send</Icon>
           </Button>
         </div>
       </div>

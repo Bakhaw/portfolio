@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import projects from '../../projects';
 import Slider from './Slider';
-import Footer from '../../components/Footer';
-import PrevButton from '../../components/PrevButton';
 import Spinner from '../../components/Spinner';
 
 // ! project img screenshots are taken on web (web screen width size = 1366)
@@ -59,11 +57,9 @@ class Project extends Component {
     return (
       <div className='Project'>
         <div className='Project__header'>
-          <PrevButton history={this.props.history} />
           <h1>{projectName}</h1>
         </div>
         <Slider {...currentProject} />
-        <Footer />
       </div>
     );
   }
