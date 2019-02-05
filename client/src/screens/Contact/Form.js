@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withNamespaces } from 'react-i18next';
 import axios from 'axios';
 import Icon from '@material-ui/core/Icon';
 import Button from '../../components/Button';
@@ -79,10 +80,11 @@ class Form extends Component {
 
   render() {
     const { email, isLoading, message } = this.state;
+    const { t } = this.props;
 
     return (
       <div className='Form'>
-        <h1 className='Form__title'>Contact me</h1>
+        <h1 className='Form__title'>{t('Contact me')}</h1>
         <div className='Form__container'>
           <Input
             error={email.error}
@@ -106,7 +108,7 @@ class Form extends Component {
             value={message.value}
           />
           <Button backgroundColor='#F4AB33' onClick={this.checkFormErrors}>
-            {isLoading ? <Spinner /> : 'Send'}
+            {isLoading ? <Spinner /> : t('Send')}
             <Icon style={{ fontSize: 20 }}>send</Icon>
           </Button>
         </div>
@@ -115,4 +117,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default withNamespaces()(Form);

@@ -1,9 +1,9 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import TextField from '@material-ui/core/TextField';
-import classNames from 'classnames';
 import InputError from './InputError';
 
-function Input({ error, name, onChange, placeholder, type, value }) {
+function Input({ error, name, onChange, placeholder, type, t, value }) {
   const lol = '\u{1F61B}';
   const cry = '\u{1F622}';
 
@@ -22,7 +22,7 @@ function Input({ error, name, onChange, placeholder, type, value }) {
         />
         <InputError
           error={error}
-          text={`You don't want to send me a message ? ${cry}`}
+          text={`${t('SendEmail__message__error')} ${cry}`}
         />
       </div>
     );
@@ -42,11 +42,11 @@ function Input({ error, name, onChange, placeholder, type, value }) {
         /> */}
         <InputError
           error={error}
-          text={`I need to know your email to answer ${lol}`}
+          text={`${t('SendEmail__email__error')} ${lol}`}
         />
       </div>
     );
   }
 }
 
-export default Input;
+export default withNamespaces()(Input);
