@@ -1,59 +1,28 @@
 import React from 'react';
-
-const baseImgPath = 'src/assets/images';
-
-const skills = [
-  {
-    img: `${baseImgPath}/react.svg`,
-    name: 'Technos',
-    tags: ['JavaScript', 'React Lover \u{1F37F}', 'Node.js']
-  },
-  {
-    img: `${baseImgPath}/superhero.svg`,
-    name: 'Investment',
-    tags: ['Passionate', 'Ambitious', 'Rigorous']
-  },
-  {
-    img: `${baseImgPath}/active.svg`,
-    name: 'Activity',
-    tags: ['Github addict', 'Up-to-date', 'Curious']
-  },
-  {
-    img: `${baseImgPath}/creative.svg`,
-    name: 'Personality',
-    tags: ['Joyful \u{1F601}', 'Patient', 'Leadership']
-  },
-  {
-    img: `${baseImgPath}/adaptability.svg`,
-    name: 'Productivity',
-    tags: ['Creative', 'Efficient', 'Independent']
-  },
-  {
-    img: `${baseImgPath}/teamwork.svg`,
-    name: 'Teamworking',
-    tags: ['Sociable', 'Attentive', 'Enterprising']
-  }
-];
+import ContentWrapper from '../../components/ContentWrapper';
+import skills from './skills';
 
 function Skills() {
   return (
-    <div className='Skills'>
-      <ul className='Skills__list'>
-        {skills.map(({ img, name, tags }, index) => (
-          <li key={index} className='Skills__list__listitem'>
-            <div className='Skills__list__listitem__header'>
-              <img src={img} />
-              <h2>{name}</h2>
-            </div>
-            <ul>
-              {tags.map((tag, i) => (
-                <li>{tag}</li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ContentWrapper>
+      <div className='Skills'>
+        <ul className='Skills__list'>
+          {skills.map(({ img, name, tags }, index) => (
+            <li key={index} className='Skills__list__listitem'>
+              <div className='Skills__list__listitem__header'>
+                <img src={img} />
+                <h2>{name}</h2>
+              </div>
+              <ul>
+                {tags.map((tag, i) => (
+                  <li>{tag}</li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </ContentWrapper>
   );
 }
 
