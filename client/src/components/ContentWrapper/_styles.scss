@@ -1,5 +1,5 @@
 .ContentWrapper {
-  height: $ContentWrapper__height;
+  min-height: $ContentWrapper__height;
   width: $ContentWrapper__width;
   display: flex;
   flex-direction: column;

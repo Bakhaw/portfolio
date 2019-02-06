@@ -1,0 +1,40 @@
+.Portfolio {
+  background: $White;
+  width: 100%;
+  height: $ContentWrapper__height;
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  .Portfolio__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 0 250px 30px;
+    .Portfolio__list__listitem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .Portfolio__list__listitem__title {
+        color: $Black;
+        font-size: 22px;
+        transition: 0.3s;
+      }
+    }
+    .Portfolio__list__listitem__active {
+      .Portfolio__list__listitem__title {
+        margin-left: 50px;
+        color: $PurpleLight;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+    }
+  }
+  .Portfolio__list__listitem__banner {
+    height: auto;
+    width: 95%;
+    margin: auto;
+    box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.25),
+      0 5px 15px rgba(112, 109, 216, 0.06);
+    background-color: $White;
+    border-radius: 0.5rem;
+  }
+}
