@@ -1,11 +1,11 @@
 import React from 'react';
 import ContentWrapper from '../../components/ContentWrapper';
-import Hero from '../../components/Hero';
+import ProfileCard from '../../components/ProfileCard';
 
 function Home() {
   return (
     <ContentWrapper>
-      <Hero />
+      <ProfileCard />
     </ContentWrapper>
   );
 }
