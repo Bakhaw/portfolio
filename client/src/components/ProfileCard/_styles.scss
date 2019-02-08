@@ -1,0 +1,41 @@
+.ProfileCard {
+  h1,
+  h2 {
+    margin: 0;
+  }
+  .ProfileCard__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    height: 300px;
+    width: 25vw;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.25),
+      0 5px 15px rgba(112, 109, 216, 0.06);
+    .ProfileCard__content__media {
+      height: auto;
+      width: 150px;
+      margin: 0;
+      border-radius: 50%;
+      background: $White;
+      border: 5px solid $White;
+      transform: translateY(-50px);
+    }
+    .ProfileCard__content__bio {
+      transform: translateY(-35px);
+      color: $Black;
+      text-align: center;
+      h1 {
+        font-weight: bold;
+      }
+    }
+    .ProfileCard__content__location {
+      transform: translateY(-20px);
+      color: $GreyDark;
+    }
+  }
+}
