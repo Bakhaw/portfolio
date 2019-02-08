@@ -27,16 +27,18 @@ const routes = [
 function NavBar({ location, t }) {
   return (
     <div className='NavBar'>
-      <Link to='/'>
+      {/* <Link to='/'>
         <NavBrand />
-      </Link>
-      <ChangeLanguageButton />
+      </Link> */}
       <div className='NavBar__NavLinks'>
-        {routes.map(({ text, to }, index) => (
-          <NavLink key={index} location={location} to={to}>
-            {t(text)}
-          </NavLink>
-        ))}
+        <ul>
+          {routes.map(({ text, to }, index) => (
+            <NavLink key={index} location={location} to={to}>
+              {t(text)}
+            </NavLink>
+          ))}
+        </ul>
+        <ChangeLanguageButton />
       </div>
     </div>
   );

@@ -1,44 +1,43 @@
 .NavBar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: $NavBar__height;
-  padding: 0 150px 10px 150px;
-  background-color: $White;
-  box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.25),
-    0 5px 15px rgba(112, 109, 216, 0.06);
-  margin-top: 35px;
   .NavBar__NavBrand {
     display: flex;
     justify-content: space-around;
     align-items: center;
     .NavBar__NavBrand__image {
-      width: 90px;
-      margin-bottom: 30px;
+      width: 60px;
       -webkit-filter: drop-shadow(10px 10px 10px rgba(112, 109, 216, 0.12));
       filter: drop-shadow(10px 10px 10px rgba(112, 109, 216, 0.12));
     }
   }
   .NavBar__NavLinks {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-  }
-  .NavBar__NavLinks__NavLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $Black;
-    font-size: 22px;
-    height: 100%;
-    text-decoration: none;
-    margin: 0 10px;
-    border-top: 10px solid transparent;
-  }
-  .NavBar__NavLinks__NavLink__active {
-    border-top: 10px solid $PurpleLight;
-    color: $PurpleLight;
-    font-weight: bold;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 50px;
+      margin-right: 70px;
+      .NavBar__NavLinks__NavLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7483c7;
+        font-size: 22px;
+        height: 100%;
+        text-decoration: none;
+        margin: 0 10px;
+        border-top: 10px solid transparent;
+      }
+      .NavBar__NavLinks__NavLink__active {
+        color: #ef4b6c;
+        font-size: 26px;
+      }
+    }
   }
 }
