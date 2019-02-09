@@ -15,7 +15,7 @@ const socials = [
   }
 ];
 
-function Socials() {
+export default function Socials() {
   return (
     <div className='Socials'>
       {socials.map(({ href, icon }, index) => (
@@ -30,5 +30,3 @@ function Socials() {
     </div>
   );
 }
-
-export default Socials;

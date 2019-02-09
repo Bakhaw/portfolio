@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import projects from '../../projects';
+import PrevButton from '../../components/PrevButton';
 import Slider from './Slider';
 import Spinner from '../../components/Spinner';
 
@@ -57,6 +58,7 @@ class Project extends Component {
     return (
       <div className='Project'>
         <div className='Project__header'>
+          <PrevButton />
           <h1>{projectName}</h1>
         </div>
         <Slider {...currentProject} />

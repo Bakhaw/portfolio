@@ -8,13 +8,13 @@ function Skills({ t }) {
     <ContentWrapper>
       <div className='Skills fade-in'>
         <ul className='Skills__list'>
-          {skills.map(({ animation, img, name, tags }, index) => (
-            <li key={index} className={`Skills__list__listitem ${animation}`}>
+          {skills.map(({ img, name, tags }, index) => (
+            <li key={index} className='Skills__list__listitem'>
               <div className='Skills__list__listitem__header'>
                 <img src={img} />
                 <h2>{t(name)}</h2>
               </div>
-              <ul>
+              <ul className='Skills__list__listitem__tags'>
                 {tags.map((tag, i) => (
                   <li key={i}>{t(tag)}</li>
                 ))}

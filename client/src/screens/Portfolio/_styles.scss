@@ -1,5 +1,5 @@
 .Portfolio {
-  background: $White;
+  // background: $White;
   width: 100%;
   height: $ContentWrapper__height;
   display: grid;
@@ -14,6 +14,9 @@
       justify-content: flex-start;
       align-items: center;
       .Portfolio__list__listitem__title {
+        cursor: pointer;
+        // width: 150px;
+        // max-width: 150px;
         color: $Black;
         font-size: 22px;
         transition: 0.3s;
@@ -22,19 +25,37 @@
     .Portfolio__list__listitem__active {
       .Portfolio__list__listitem__title {
         margin-left: 50px;
-        color: $PurpleLight;
+        color: $Green;
         font-weight: bold;
         transition: 0.3s;
       }
     }
   }
-  .Portfolio__list__listitem__banner {
+  .Portfolio__list__listitem__banner__container {
     height: auto;
     width: 95%;
     margin: auto;
     box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.25),
       0 5px 15px rgba(112, 109, 216, 0.06);
-    background-color: $White;
+    position: relative;
     border-radius: 0.5rem;
+    .Portfolio__list__listitem__banner__image {
+      height: auto;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    .Portfolio__list__listitem__banner__eye {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.5rem;
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      a {
+        color: $White;
+      }
+    }
   }
 }

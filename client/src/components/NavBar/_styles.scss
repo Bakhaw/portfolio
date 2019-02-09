@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   height: $NavBar__height;
+  background: rgba($Black, 0.98);
   .NavBar__NavBrand {
     display: flex;
     justify-content: space-around;
@@ -21,22 +22,41 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      height: 50px;
+      height: 40px;
       margin-right: 70px;
       .NavBar__NavLinks__NavLink {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #7483c7;
-        font-size: 22px;
-        height: 100%;
+        color: $GreyGreen;
+        font-size: 18px;
+        height: 30px;
         text-decoration: none;
         margin: 0 10px;
-        border-top: 10px solid transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+          to right,
+          $White 50%,
+          $White 50%,
+          $GreyGreen 50%
+        );
+        background-size: 200% 100%;
+        background-position: 100%;
+        &:hover {
+          transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+          background-position: 0%;
+        }
       }
       .NavBar__NavLinks__NavLink__active {
-        color: #ef4b6c;
-        font-size: 26px;
+        -webkit-text-fill-color: unset;
+        color: $White;
+        background: $Green;
+        border-radius: 50px;
+        min-width: 90px;
+        margin: 0;
+        padding: 5px 10px;
+        font-weight: bold;
       }
     }
   }

@@ -1,5 +1,5 @@
 * {
-  font-family: $Dosis;
+  font-family: $Rubik;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
 }
@@ -7,7 +7,8 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url('../assets/images/cool-background.svg');
+  background-image: linear-gradient($Purple 0, rgba($Purple, 0.2) 0),
+    url('../assets/images/flowers.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

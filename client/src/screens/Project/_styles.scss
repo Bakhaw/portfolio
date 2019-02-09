@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $PurpleBasic;
+  background: $Green;
 }
 
 .Project {
@@ -29,7 +29,6 @@
       margin: 0;
       color: $White;
       grid-column: 6;
-      letter-spacing: 1.3px;
       text-align: center;
       text-transform: uppercase;
       font-size: 38px;

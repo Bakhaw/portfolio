@@ -1,7 +1,7 @@
 import React from 'react';
 import MaterialButton from '@material-ui/core/Button';
 
-function Button({ backgroundColor, children, onClick }) {
+export default function Button({ backgroundColor, children, onClick }) {
   return (
     <MaterialButton
       className='Button'
@@ -12,5 +12,3 @@ function Button({ backgroundColor, children, onClick }) {
     </MaterialButton>
   );
 }
-
-export default Button;
