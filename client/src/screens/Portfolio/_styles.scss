@@ -1,9 +1,8 @@
 .Portfolio {
-  // background: $White;
-  width: 100%;
-  height: $ContentWrapper__height;
   display: grid;
   grid-template-columns: 20vw 80vw;
+  min-height: $Content__height;
+  width: 100%;
   .Portfolio__list {
     display: flex;
     flex-direction: column;
@@ -14,20 +13,47 @@
       justify-content: flex-start;
       align-items: center;
       .Portfolio__list__listitem__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         cursor: pointer;
-        // width: 150px;
-        // max-width: 150px;
-        color: $Black;
-        font-size: 22px;
-        transition: 0.3s;
+        font-size: $FontSize__6;
+        // color: $GreyGreen;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+          to right,
+          $White 50%,
+          $White 50%,
+          $GreenGrey 50%
+        );
+        background-size: 200% 100%;
+        background-position: 100%;
+        &:hover {
+          transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+          background-position: 0%;
+        }
       }
     }
+    // ? ITEM ACTIVE
     .Portfolio__list__listitem__active {
       .Portfolio__list__listitem__title {
-        margin-left: 50px;
+        transition: 0.5s;
+        margin-left: 40px;
+        width: 100%;
+        -webkit-text-fill-color: unset;
         color: $Green;
         font-weight: bold;
-        transition: 0.3s;
+      }
+      .Portfolio__list__listitem__title__explore {
+        p {
+          color: $GreenWhite;
+          font-size: $FontSize__3;
+          margin: 0;
+          &:hover {
+            color: $White;
+          }
+        }
       }
     }
   }
@@ -35,27 +61,13 @@
     height: auto;
     width: 95%;
     margin: auto;
-    box-shadow: 0 15px 55px 0 rgba(112, 109, 216, 0.25),
-      0 5px 15px rgba(112, 109, 216, 0.06);
-    position: relative;
-    border-radius: 0.5rem;
+    box-shadow: 0 15px 55px 0 rgba($GreenBlack, 0.05),
+      0 5px 15px rgba($GreenBlack, 0.05);
+    border-radius: 10px;
     .Portfolio__list__listitem__banner__image {
       height: auto;
       width: 100%;
-      border-radius: 0.5rem;
-    }
-    .Portfolio__list__listitem__banner__eye {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      border-radius: 0.5rem;
-      background: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      a {
-        color: $White;
-      }
+      border-radius: 10px;
     }
   }
 }

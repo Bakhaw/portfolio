@@ -16,7 +16,7 @@ function ProfileCard({ t }) {
         <Socials />
       </div>
       <Link to='/contact'>
-        <Button backgroundColor='#707b6c'>{t('Contact me')}</Button>
+        <Button>{t('Contact me')}</Button>
       </Link>
     </div>
   );

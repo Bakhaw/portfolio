@@ -12,9 +12,12 @@
     margin-bottom: 30px;
     height: 45vh;
     width: 25vw;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     background: rgba($White, 0.98);
     box-shadow: 0 15px 55px 0 rgba($Black, 0.25), 0 5px 15px rgba($Black, 0.06);
+    @include xs {
+      width: 60vw;
+    }
     .ProfileCard__content__media {
       height: auto;
       width: 150px;
@@ -29,16 +32,22 @@
       color: $Black;
       text-align: center;
       h1 {
+        font-size: $FontSize__7;
         font-weight: bold;
+        color: $GreenBlack;
+      }
+      h2 {
+        font-size: $FontSize__6;
+        color: $GreenBlack;
       }
     }
     .ProfileCard__content__location {
       transform: translateY(-20px);
-      color: $GreyDark;
+      color: $GreenGrey;
+      font-size: $FontSize__4;
     }
   }
   .Button {
-    display: inline-block;
     background: linear-gradient(
       to left,
       $Purple 50%,
@@ -46,7 +55,6 @@
     ) !important;
     background-size: 200% 100% !important;
     background-position: right bottom !important;
-    margin-left: 10px;
     transition: all 0.35s ease;
     &:hover {
       background-position: left bottom !important;

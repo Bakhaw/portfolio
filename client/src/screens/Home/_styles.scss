@@ -1,0 +1,12 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: $Content__height;
+  width: 100vw;
+  background-image: linear-gradient($Purple 0, rgba($Purple, 0.2) 0),
+    url('../assets/images/flowers.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

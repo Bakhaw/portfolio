@@ -2,10 +2,10 @@
   height: 50px;
   width: 100%;
   box-shadow: 0 15px 30px 0 rgba($Black, 0.3), 0 5px 15px rgba($Black, 0.06);
-  border-radius: 0.5rem !important;
+  border-radius: 10px !important;
   span {
     color: $White;
-    font-size: 18px;
+    font-size: $FontSize__4;
     font-weight: bold;
   }
 }

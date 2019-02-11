@@ -1,10 +1,17 @@
-// ? Font
+// ? Font size
+$FontSize__1: 12px;
+$FontSize__2: 14px;
+$FontSize__3: 16px;
+$FontSize__4: 18px;
+$FontSize__5: 20px;
+$FontSize__6: 22px;
+$FontSize__7: 28px;
+
+// ? Font family
 $Rubik: 'Josefin Sans', sans-serif;
 
 // ? <NavBar />
 $NavBar__height: 65px;
 
-// ? <ContentWrapper />
-// 35px is NavBar margin-top
-$ContentWrapper__height: calc(100vh - (#{$NavBar__height} + 35px));
-$ContentWrapper__width: 100vw;
+// ? Global
+$Content__height: calc(100vh - #{$NavBar__height});

@@ -4,7 +4,13 @@ import { Carousel } from 'react-responsive-carousel';
 
 function Slider({ galleryLength, projectName }) {
   return (
-    <Carousel showArrows useKeyboardArrows width='80%'>
+    <Carousel
+      showArrows
+      showIndicators={false}
+      showStatus={false}
+      useKeyboardArrows
+      width='60vw'
+    >
       <div>
         <img
           alt={`${projectName} screen shot`}

@@ -1,13 +1,17 @@
 .PrevButton {
+  display: flex;
+  align-items: center;
+  span {
+    color: $GreenWhite;
+    font-size: $FontSize__3;
+  }
   img {
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
     &:hover {
       opacity: 0.7;
-    }
-    &:active {
-      transform: scale(0.8);
     }
   }
 }

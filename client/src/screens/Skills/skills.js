@@ -3,7 +3,7 @@ const skills = [
   {
     img: `${baseImgPath}/technos.svg`,
     name: 'Technos',
-    tags: ['JavaScript', 'React Lover \u{1F37F}', 'Node.js']
+    tags: ['Node.js', 'JavaScript', 'React Lover \u{1F37F}']
   },
   {
     img: `${baseImgPath}/investment.svg`,
