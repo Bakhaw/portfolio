@@ -9,7 +9,7 @@ import Socials from '../Socials';
 
 function ProfileCard({ t }) {
   return (
-    <div className='ProfileCard slide-in-blurred-right'>
+    <div className='ProfileCard'>
       <div className='ProfileCard__content'>
         <Media />
         <Bio t={t} />

@@ -10,8 +10,9 @@
     align-items: center;
     padding: 20px 50px;
     margin-bottom: 30px;
-    height: 45vh;
-    width: 25vw;
+    height: 300px;
+    width: 300px;
+    max-width: 300px;
     border-radius: 10px;
     background: rgba($White, 0.98);
     box-shadow: 0 15px 55px 0 rgba($Black, 0.25), 0 5px 15px rgba($Black, 0.06);
@@ -35,6 +36,9 @@
         font-size: $FontSize__7;
         font-weight: bold;
         color: $GreenBlack;
+        @include xs {
+          width: 100vw;
+        }
       }
       h2 {
         font-size: $FontSize__6;
@@ -45,6 +49,7 @@
       transform: translateY(-20px);
       color: $GreenGrey;
       font-size: $FontSize__4;
+      text-align: center;
     }
   }
   .Button {

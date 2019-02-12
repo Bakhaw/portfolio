@@ -3,6 +3,7 @@
   grid-template-columns: 20vw 80vw;
   min-height: $Content__height;
   width: 100%;
+  padding-top: $NavBar__height;
   .Portfolio__list {
     display: flex;
     flex-direction: column;

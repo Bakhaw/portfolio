@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - #{$NavBar__height});
+  min-height: $Content__height;
+  padding-top: $NavBar__height;
   .ContactCard {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import CheckIcon from '../../assets/images/check.svg';
 import skills from './skills';
 
 function Skills({ t }) {
@@ -11,10 +12,14 @@ function Skills({ t }) {
             <div className='Skills__list__listitem__header'>
               <img src={img} />
               <h2>{t(name)}</h2>
+              <hr />
             </div>
             <ul className='Skills__list__listitem__tags'>
               {tags.map((tag, i) => (
-                <li key={i}>{t(tag)}</li>
+                <li key={i}>
+                  <img alt='check' src={CheckIcon} />
+                  <span>{t(tag)}</span>
+                </li>
               ))}
             </ul>
           </li>
