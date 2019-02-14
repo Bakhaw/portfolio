@@ -22,5 +22,7 @@
   "Enterprising": "Enterprising",
   "Send": "Send",
   "SendEmail__email__error": "I need to know your email to answer",
-  "SendEmail__message__error": "You don't want to send me a message ?"
+  "SendEmail__message__error": "You don't want to send me a message ?",
+  "Github__button": "See on Github",
+  "Demo__button": "Try demo"
 }

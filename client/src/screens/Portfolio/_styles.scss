@@ -1,8 +1,47 @@
+// *** MOBILE SLIDER ***
+.MobileSlider {
+  min-height: $Content__height;
+  margin-top: 30px;
+  padding-top: $NavBar__height;
+  * {
+    background: $Black !important;
+  }
+  .control-dots {
+    margin: 20px 0;
+    position: unset;
+    bottom: unset;
+    transform: translateY(-125px);
+    .dot {
+      background: $GreenWhite !important;
+    }
+  }
+  img {
+    height: 300px;
+  }
+  .MobileSlider__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+    h1 {
+      color: $GreenWhite;
+      font-size: $FontSize__8;
+    }
+    span {
+      color: $GreenWhite;
+      font-size: $FontSize__2;
+    }
+  }
+}
+// *** END MOBILE SLIDER ***
+
 .Portfolio {
   display: grid;
   grid-template-columns: 20vw 80vw;
+  justify-content: flex-start;
   min-height: $Content__height;
-  width: 100%;
+  width: 100vw;
   padding-top: $NavBar__height;
   .Portfolio__list {
     display: flex;
@@ -19,7 +58,6 @@
         align-items: center;
         cursor: pointer;
         font-size: $FontSize__6;
-        // color: $GreyGreen;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(
@@ -30,6 +68,9 @@
         );
         background-size: 200% 100%;
         background-position: 100%;
+        @include md {
+          font-size: $FontSize__5;
+        }
         &:hover {
           transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
           background-position: 0%;
@@ -45,12 +86,18 @@
         -webkit-text-fill-color: unset;
         color: $Green;
         font-weight: bold;
+        @include md {
+          margin-left: 10px;
+        }
       }
       .Portfolio__list__listitem__title__explore {
         p {
           color: $GreenWhite;
           font-size: $FontSize__3;
           margin: 0;
+          @include md {
+            font-size: $FontSize__2;
+          }
           &:hover {
             color: $White;
           }
@@ -59,14 +106,14 @@
     }
   }
   .Portfolio__list__listitem__banner__container {
-    height: auto;
+    height: 80vh;
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
     box-shadow: 0 15px 55px 0 rgba($GreenBlack, 0.05),
       0 5px 15px rgba($GreenBlack, 0.05);
     border-radius: 10px;
     .Portfolio__list__listitem__banner__image {
-      height: auto;
+      height: 80vh;
       width: 100%;
       border-radius: 10px;
     }

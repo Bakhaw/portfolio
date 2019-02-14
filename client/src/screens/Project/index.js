@@ -53,16 +53,18 @@ class Project extends Component {
         </div>
       );
 
-    const { projectName } = currentProject;
+    const { bannerTitle } = currentProject;
 
     return (
       <div className='Project'>
-        <Header projectName={projectName} />
+        <Header bannerTitle={bannerTitle} />
         <div className='Project__content'>
           <Slider {...currentProject} />
           <div className='Project__content__description'>
-            <Description currentProject={currentProject} />
-            <Technos currentProject={currentProject} />
+            <div>
+              <Description currentProject={currentProject} />
+              <Technos currentProject={currentProject} />
+            </div>
             <Links currentProject={currentProject} />
           </div>
         </div>

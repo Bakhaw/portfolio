@@ -2,25 +2,7 @@ import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import ChangeLanguageButton from '../ChangeLanguageButton';
 import NavLink from './NavLink';
-
-const routes = [
-  {
-    text: 'Home',
-    to: '/'
-  },
-  {
-    text: 'Skills',
-    to: '/skills'
-  },
-  {
-    text: 'Portfolio',
-    to: '/portfolio'
-  },
-  {
-    text: 'Contact',
-    to: '/contact'
-  }
-];
+import routes from './routes';
 
 function NavBar({ t }) {
   return (

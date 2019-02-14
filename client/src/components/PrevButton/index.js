@@ -1,14 +1,17 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import Link from 'react-router-dom/Link';
 import LeftArrow from '../../assets/images/left-arrow.svg';
 
-function PrevButton({ history: { goBack } }) {
+// TODO this isn't rly for going back, actually its just a Link to /portfolio
+function PrevButton() {
   return (
     <div className='PrevButton'>
-      <img alt='Go back button' onClick={goBack} src={LeftArrow} />
+      <Link to='/portfolio'>
+        <img alt='Go back button' src={LeftArrow} />
+      </Link>
       <span>Portfolio</span>
     </div>
   );
 }
 
-export default withRouter(PrevButton);
+export default PrevButton;

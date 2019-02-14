@@ -17,7 +17,8 @@
     background: rgba($White, 0.98);
     box-shadow: 0 15px 55px 0 rgba($Black, 0.25), 0 5px 15px rgba($Black, 0.06);
     @include xs {
-      width: 60vw;
+      width: 55vw;
+      height: 270px;
     }
     .ProfileCard__content__media {
       height: auto;
@@ -27,11 +28,18 @@
       background: $White;
       border: 5px solid $White;
       transform: translateY(-50px);
+      @include xs {
+        width: 130px;
+        transform: translateY(-60px);
+      }
     }
     .ProfileCard__content__bio {
       transform: translateY(-35px);
       color: $Black;
       text-align: center;
+      @include xs {
+        transform: translateY(-45px);
+      }
       h1 {
         font-size: $FontSize__7;
         font-weight: bold;

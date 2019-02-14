@@ -12,7 +12,7 @@ function ProfileCard({ t }) {
     <div className='ProfileCard'>
       <div className='ProfileCard__content'>
         <Media />
-        <Bio t={t} />
+        <Bio />
         <Socials />
       </div>
       <Link to='/contact'>

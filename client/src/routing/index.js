@@ -7,7 +7,7 @@ import Project from '../screens/Project';
 import Skills from '../screens/Skills';
 import NavBar from '../components/NavBar';
 
-function Router() {
+export default function Router() {
   return (
     <HashRouter>
       <div>
@@ -24,5 +24,3 @@ function Router() {
     </HashRouter>
   );
 }
-
-export default Router;

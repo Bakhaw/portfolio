@@ -18,4 +18,9 @@ body {
   li {
     list-style-type: none;
   }
+  div[role='tooltip'] {
+    div {
+      font-size: $FontSize__2;
+    }
+  }
 }

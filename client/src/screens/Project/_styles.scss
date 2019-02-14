@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
   min-height: $Content__height;
   padding-top: $NavBar__height;
   .Project__header {
@@ -21,28 +21,68 @@
     align-items: center;
     margin: 10px;
     padding: 10px 0;
-    button {
+    .PrevButton {
       grid-column: 1;
     }
     h1 {
       margin: 0;
       color: $White;
-      grid-column: 6;
+      grid-column: 5 / 8;
       text-align: center;
-      text-transform: uppercase;
       font-size: $FontSize__7;
+      @include xs {
+        font-size: $FontSize__6;
+      }
     }
   }
   .Project__content {
     display: grid;
     grid-template-columns: 65vw 35vw;
+    @include xs {
+      grid-template-columns: 100vw;
+    }
+    @include sm {
+      grid-template-columns: 100vw;
+    }
     .carousel {
       padding: 0 30px;
       border-radius: 10px;
       margin-right: auto;
+      &:first-child {
+        height: 430px;
+        @include xs {
+          height: 250px;
+        }
+        @include sm {
+          height: 350px;
+        }
+        img {
+          height: 430px;
+          @include xs {
+            height: 250px;
+          }
+          @include sm {
+            height: 350px;
+          }
+        }
+      }
+      @include xs {
+        padding: 0;
+        border-radius: 0;
+      }
+      @include sm {
+        padding: 0;
+        border-radius: 0;
+      }
       .thumbs-wrapper {
         width: 60vw;
         margin: 20px 0;
+        @include xs {
+          width: 100%;
+        }
+        @include sm {
+          width: 100%;
+        }
         .thumbs {
           display: flex;
           flex-wrap: wrap;
@@ -53,9 +93,18 @@
             width: 80px;
             cursor: pointer;
             border: 5px solid transparent;
+            @include xs {
+              width: 70px;
+              border: 3px solid transparent;
+              margin: 0;
+            }
           }
           .selected {
             border: 5px solid $Green;
+            @include xs {
+              margin: 0;
+              border: 3px solid $Green;
+            }
           }
         }
       }
@@ -65,12 +114,21 @@
         0 5px 15px rgba($Black, 0.06);
     }
     .Project__content__description {
-      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      padding: 0 10px;
+      height: 430px;
       div {
         p {
           margin: 0;
           color: $White;
           font-size: $FontSize__5;
+          @include md {
+            font-size: $FontSize__4;
+          }
         }
         &:first-child {
           margin: 0 !important;
@@ -79,8 +137,12 @@
       }
       .Technos__list {
         display: grid;
-        grid-template-columns: 30% 30%;
+        grid-template-columns: 50% 50%;
         gap: 30px;
+        @include md {
+          grid-template-columns: 100%;
+          gap: 10px 0;
+        }
         li {
           img {
             width: 15px;
@@ -91,6 +153,47 @@
             color: $White;
             font-size: $FontSize__4;
           }
+        }
+      }
+      .Project__links {
+        display: flex;
+        grid-row: 5;
+        @include md {
+          flex-direction: column;
+        }
+        li {
+          margin-right: 15px;
+          @include md {
+            margin-top: 15px;
+          }
+          a {
+            .Button {
+              background: $Green;
+              padding: 10px 20px;
+              background: linear-gradient(
+                to left,
+                $Green 50%,
+                $GreenDark 50%
+              ) !important;
+              background-size: 200% 100% !important;
+              background-position: right bottom !important;
+              transition: all 0.35s ease;
+              span {
+                font-size: $FontSize__3;
+                @include xs {
+                  font-size: $FontSize__1;
+                }
+              }
+              &:hover {
+                background-position: left bottom !important;
+              }
+            }
+          }
+        }
+        .Project__links__button__disabled {
+          filter: opacity(25%);
+          cursor: not-allowed;
+          pointer-events: none;
         }
       }
     }

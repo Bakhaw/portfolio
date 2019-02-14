@@ -3,13 +3,17 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 function Slider({ galleryLength, projectName }) {
+  const smallScreen = window.screen.availWidth < 767;
+  const carouselWidth = smallScreen ? '100%' : '60vw';
   return (
     <Carousel
-      showArrows
+      dynamicHeight={false}
+      showArrows={!smallScreen}
       showIndicators={false}
       showStatus={false}
       useKeyboardArrows
-      width='60vw'
+      transitionTime={smallScreen ? 125 : 350} // 350 is default transitionTime
+      width={carouselWidth}
     >
       <div>
         <img

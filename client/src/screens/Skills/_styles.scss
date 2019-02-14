@@ -24,15 +24,12 @@
       justify-content: space-around;
       align-items: center;
       padding: 20px 50px;
-      height: 380px;
+      height: 350px;
       border-radius: 10px;
       box-shadow: 0 15px 30px 0 rgba($Black, 0.3), 0 5px 15px rgba($Black, 0.06);
       background: rgba($White, 0.98);
       position: relative;
       overflow: hidden;
-      @include xlg {
-        height: 350px;
-      }
       &::before {
         // content: '';
         position: absolute;

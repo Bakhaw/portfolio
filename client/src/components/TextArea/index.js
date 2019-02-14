@@ -3,41 +3,30 @@ import { withNamespaces } from 'react-i18next';
 import Tooltip from '@material-ui/core/Tooltip';
 import ErrorIcon from '../../assets/images/error.svg';
 
-function Input({
-  autoFocus,
-  error,
-  name,
-  onChange,
-  placeholder,
-  type,
-  t,
-  value
-}) {
-  const lol = '\u{1F61B}';
+function TextArea({ error, name, onChange, placeholder, t, value }) {
+  const cry = '\u{1F622}';
   const smallScreen = window.screen.availWidth < 767;
-  return (
-    <div className='Input'>
-      {smallScreen && !error && (
-        <img className='Input__error__image' src={ErrorIcon} />
-      )}
 
+  return (
+    <div className='TextArea'>
+      {smallScreen && !error && (
+        <img className='TextArea__error__image' src={ErrorIcon} />
+      )}
       <Tooltip
-        className='Input__Tooltip'
+        className='Tooltip'
         open={smallScreen ? false : error}
         placement='right'
-        title={`${t('SendEmail__email__error')} ${lol}`}
+        title={`${t('SendEmail__message__error')} ${cry}`}
       >
-        <input
-          autoFocus={autoFocus}
+        <textarea
           name={name}
           onChange={onChange}
           placeholder={placeholder}
-          type={type}
+          rows='4'
           value={value}
         />
       </Tooltip>
     </div>
   );
 }
-
-export default withNamespaces()(Input);
+export default withNamespaces()(TextArea);

@@ -14,7 +14,10 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     galleryLength: 4,
-    href: 'http://app-twitch.herokuapp.com/#/',
+    links: {
+      github: 'https://github.com/Bakhaw/twitch-app',
+      online: 'https://app-twitch.herokuapp.com/#/'
+    },
     projectName: 'twitch',
     technos: ['React', 'Redux', 'Twitch API', 'Sass', 'Responsive', 'Heroku']
   },
@@ -24,7 +27,10 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     galleryLength: 5,
-    href: 'http://app-football.herokuapp.com/#/',
+    links: {
+      github: 'https://github.com/Bakhaw/football-app',
+      online: 'https://app-football.herokuapp.com/#/'
+    },
     projectName: 'football',
     technos: ['React', 'Sass', 'Responsive', 'Heroku']
   },
@@ -34,7 +40,10 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     galleryLength: 10,
-    href: 'http://cld-peda.herokuapp.com/#/',
+    links: {
+      github: 'https://github.com/Bakhaw/cld-peda',
+      online: 'https://cld-peda.herokuapp.com/#/'
+    },
     projectName: 'calendar',
     technos: [
       'React',
@@ -53,7 +62,10 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     galleryLength: 10,
-    href: 'https://github.com/Bakhaw/Hipip-In',
+    links: {
+      github: 'https://github.com/Bakhaw/Hipip-In',
+      online: null
+    },
     projectName: 'hipipin',
     technos: [
       'React',
@@ -71,7 +83,10 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     galleryLength: 13,
-    href: 'https://github.com/Bakhaw/avocado',
+    links: {
+      github: 'https://github.com/Bakhaw/avocado',
+      online: null
+    },
     projectName: 'avocado',
     technos: [
       'React',
@@ -88,7 +103,10 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     galleryLength: 2,
-    href: 'https://github.com/Bakhaw/flouflix',
+    links: {
+      github: 'https://github.com/Bakhaw/flouflix',
+      online: null
+    },
     projectName: 'flouflix',
     technos: ['React', 'React Hooks', 'Sass']
   }

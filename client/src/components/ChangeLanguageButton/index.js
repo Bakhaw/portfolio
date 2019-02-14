@@ -3,7 +3,7 @@ import i18n from '../../i18n';
 import France from '../../assets/images/france.svg';
 import UK from '../../assets/images/uk.svg';
 
-function ChangeLanguageButton() {
+export default function ChangeLanguageButton() {
   const currentLng = window.localStorage.i18nextLng === 'fr-FR' ? 'FR' : 'EN';
   const flag = currentLng === 'FR' ? UK : France;
   return (
@@ -15,5 +15,3 @@ function ChangeLanguageButton() {
     />
   );
 }
-
-export default ChangeLanguageButton;

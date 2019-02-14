@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import Banner from './Banner';
 import List from './List';
+import MobileSlider from './MobileSlider';
 
 function Portfolio() {
-  const [projectName, changeProjectName] = useState('twitch');
+  const [selectedProject, handleChangeProject] = useState('twitch');
+  const smallScreen = window.screen.availWidth < 767;
+
+  if (smallScreen) {
+    return <MobileSlider />;
+  }
+
   return (
     <div className='Portfolio'>
-      <List changeProjectName={changeProjectName} projectName={projectName} />
-      <Banner projectName={projectName} />
+      <List
+        handleChangeProject={handleChangeProject}
+        selectedProject={selectedProject}
+      />
+      <Banner selectedProject={selectedProject} />
     </div>
   );
 }

@@ -1,14 +1,14 @@
-.Input {
+.TextArea {
   display: flex;
   align-items: center;
   width: 100%;
-  input {
-    padding: 0 20px;
+  textarea {
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100px;
     outline: none;
-    height: 40px;
     width: 100%;
     background: $GreyLight;
-    border-radius: 50px;
     border: none;
     color: $GreyDark;
     font-size: $FontSize__4;
@@ -16,15 +16,9 @@
   }
 }
 
-.Input__error__image {
+.TextArea__error__image {
   height: 26px;
   width: 26px;
   transform: translateX(-50px);
   position: absolute;
-}
-
-div[role='tooltip'] {
-  div {
-    font-size: $FontSize__2;
-  }
 }
