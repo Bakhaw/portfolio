@@ -107,7 +107,7 @@ class Form extends Component {
             type='textarea'
             value={message.value}
           />
-          <Button backgroundColor='#F4AB33' onClick={this.checkFormErrors}>
+          <Button onClick={this.checkFormErrors}>
             {isLoading ? <Spinner /> : t('Send')}
             <Icon style={{ fontSize: 20 }}>send</Icon>
           </Button>

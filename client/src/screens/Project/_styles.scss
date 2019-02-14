@@ -65,7 +65,7 @@
         0 5px 15px rgba($Black, 0.06);
     }
     .Project__content__description {
-      overflow: scroll;
+      overflow: auto;
       div {
         p {
           margin: 0;
@@ -79,10 +79,9 @@
       }
       .Technos__list {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 30%;
         gap: 30px;
         li {
-          // margin: 25px 0;
           img {
             width: 15px;
             height: 15px;

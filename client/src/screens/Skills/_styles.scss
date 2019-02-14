@@ -1,6 +1,5 @@
 .Skills {
   min-height: $Content__height;
-  width: 100vw;
   padding-top: $NavBar__height;
   .Skills__list {
     display: grid;
@@ -15,6 +14,10 @@
       padding: 0 50px;
       grid-template-columns: repeat(auto-fill, 320px);
     }
+    @include xlg {
+      grid-template-columns: repeat(3, 320px);
+      gap: 50px 100px;
+    }
     .Skills__list__listitem {
       display: flex;
       flex-direction: column;
@@ -27,6 +30,9 @@
       background: rgba($White, 0.98);
       position: relative;
       overflow: hidden;
+      @include xlg {
+        height: 350px;
+      }
       &::before {
         // content: '';
         position: absolute;
@@ -36,8 +42,8 @@
         left: 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        background: $Purple;
         overflow: hidden;
+        background: $Purple;
       }
       .Skills__list__listitem__header {
         text-align: center;
