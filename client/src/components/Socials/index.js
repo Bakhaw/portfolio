@@ -9,7 +9,7 @@ export default function Socials() {
           <img
             alt={`icône ${icon}`}
             className='Socials__icon'
-            src={`src/assets/socials/${icon}.webp`}
+            src={`assets/socials/${icon}.webp`}
           />
         </a>
       ))}

@@ -9,7 +9,7 @@ function TextArea({ error, name, onChange, placeholder, t, value }) {
 
   return (
     <div className='TextArea'>
-      {smallScreen && !error && (
+      {smallScreen && error && (
         <img className='TextArea__error__image' src={ErrorIcon} />
       )}
       <Tooltip

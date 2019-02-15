@@ -17,7 +17,7 @@ function Input({
   const smallScreen = window.screen.availWidth < 767;
   return (
     <div className='Input'>
-      {smallScreen && !error && (
+      {smallScreen && error && (
         <img className='Input__error__image' src={ErrorIcon} />
       )}
 

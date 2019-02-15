@@ -20,14 +20,14 @@ export default function MobileSlider() {
             <div>
               <img
                 alt={`${projectName} screen shot`}
-                src={`src/assets/projects/${projectName}/banner.webp`}
+                src={`assets/projects/${projectName}/banner.webp`}
               />
             </div>
 
             <div className='MobileSlider__title'>
               <h1>{bannerTitle}</h1>
               <Link to={`/project/${projectName}`}>
-                <span>Voir</span>
+                <span>Go</span>
               </Link>
             </div>
           </div>

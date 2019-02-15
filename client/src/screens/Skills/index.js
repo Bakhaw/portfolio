@@ -10,7 +10,7 @@ function Skills({ t }) {
         {skills.map(({ img, name, tags }, index) => (
           <li key={index} className='Skills__list__listitem'>
             <div className='Skills__list__listitem__header'>
-              <img src={`../../assets/images/${img}`} />
+              <img src={`assets/skills/${img}`} />
               <h2>{t(name)}</h2>
               <hr />
             </div>
