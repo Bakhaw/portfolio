@@ -5,7 +5,7 @@ import ErrorIcon from '../../assets/images/error.svg';
 
 function TextArea({ error, name, onChange, placeholder, t, value }) {
   const cry = '\u{1F622}';
-  const smallScreen = window.screen.availWidth < 767;
+  const smallScreen = window.screen.width < 767;
 
   return (
     <div className='TextArea'>

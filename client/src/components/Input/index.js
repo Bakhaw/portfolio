@@ -14,7 +14,7 @@ function Input({
   value
 }) {
   const lol = '\u{1F61B}';
-  const smallScreen = window.screen.availWidth < 767;
+  const smallScreen = window.screen.width < 767;
   return (
     <div className='Input'>
       {smallScreen && error && (

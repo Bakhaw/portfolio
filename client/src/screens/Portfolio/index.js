@@ -5,7 +5,7 @@ import MobileSlider from './MobileSlider';
 
 function Portfolio() {
   const [selectedProject, handleChangeProject] = useState('twitch');
-  const smallScreen = window.screen.availWidth < 767;
+  const smallScreen = window.screen.width < 767;
 
   if (smallScreen) {
     return <MobileSlider />;

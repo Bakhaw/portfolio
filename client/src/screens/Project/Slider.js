@@ -3,7 +3,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 function Slider({ galleryLength, projectName }) {
-  const smallScreen = window.screen.availWidth < 767;
+  const smallScreen = window.screen.width < 767;
   const carouselWidth = smallScreen ? '100%' : '60vw';
   return (
     <Carousel
