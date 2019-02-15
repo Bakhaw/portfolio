@@ -1,7 +1,7 @@
 server/config.js
 server/.env
 node_modules/
-/build
+/dist
 .DS_Store
 yarn-debug.log*
 yarn-error.log*

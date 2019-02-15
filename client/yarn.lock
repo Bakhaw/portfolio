@@ -6251,10 +6251,10 @@ react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-responsive-carousel@^3.1.46:
-  version "3.1.46"
-  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.46.tgz#2c57c1d8708c9179d8fa146f506e012bb12a373f"
-  integrity sha512-IojuucuudDwM7bx3NI1SLjBCQI6t3W/lK7oEgDr5CPegzu+jrxwMM7uWRduaYH3AflBBOG3MaxkTduMG4R2DUQ==
+react-responsive-carousel@3.1.43:
+  version "3.1.43"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.43.tgz#c6ccb50867958aea83a216a7d25e63441b766457"
+  integrity sha512-ZFYRtGR1dkC/3TBZKDlwWIvm0OshxCCLq4fWsRgucCja+lOfzB4Pwx9wCgmlZOBj014mne1CDAae/Syd877hIw==
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.5.8"
