@@ -1,5 +1,4 @@
 import React from 'react';
-import CheckIcon from '../../assets/images/check.svg';
 
 export default function Technos({ currentProject }) {
   return (
@@ -8,7 +7,7 @@ export default function Technos({ currentProject }) {
         {currentProject &&
           currentProject.technos.map((techno, index) => (
             <li key={index}>
-              <img alt='check' src={CheckIcon} />
+              <img alt='check' src='assets/images/check.svg' />
               <span>{techno}</span>
             </li>
           ))}

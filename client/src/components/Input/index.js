@@ -1,7 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import Tooltip from '@material-ui/core/Tooltip';
-import ErrorIcon from '../../assets/images/error.svg';
 
 function Input({
   autoFocus,
@@ -18,7 +17,7 @@ function Input({
   return (
     <div className='Input'>
       {smallScreen && error && (
-        <img className='Input__error__image' src={ErrorIcon} />
+        <img className='Input__error__image' src='assets/images/error.svg' />
       )}
 
       <Tooltip

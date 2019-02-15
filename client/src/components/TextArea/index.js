@@ -1,7 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import Tooltip from '@material-ui/core/Tooltip';
-import ErrorIcon from '../../assets/images/error.svg';
 
 function TextArea({ error, name, onChange, placeholder, t, value }) {
   const cry = '\u{1F622}';
@@ -10,7 +9,7 @@ function TextArea({ error, name, onChange, placeholder, t, value }) {
   return (
     <div className='TextArea'>
       {smallScreen && error && (
-        <img className='TextArea__error__image' src={ErrorIcon} />
+        <img className='TextArea__error__image' src='assets/images/error.svg' />
       )}
       <Tooltip
         className='Tooltip'

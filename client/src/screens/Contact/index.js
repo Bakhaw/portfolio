@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Hands from '../../assets/images/hands.svg';
 import Form from './Form';
 import MailSent from './MailSent';
 
@@ -19,7 +18,7 @@ function Contact() {
   return (
     <div className='Contact'>
       <div className='ContactCard'>
-        <img className='ContactCard__image' src={Hands} />
+        <img className='ContactCard__image' src='assets/images/hands.svg' />
         <Form toggleMailSent={toggleMailSent} />
       </div>
     </div>
