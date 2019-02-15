@@ -71,6 +71,7 @@ class Form extends Component {
     })
       .then(async res => {
         if (res.data.msg === 'success') {
+          console.log('sucess');
           await this.toggleLoading(false);
           this.props.toggleMailSent(true);
         }

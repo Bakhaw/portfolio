@@ -8,7 +8,7 @@
     justify-content: center;
     margin: 20px 0;
     @include xs {
-      grid-template-columns: 80vw;
+      grid-template-columns: 75vw;
     }
     @include sm {
       padding: 0 50px;
@@ -30,6 +30,9 @@
       background: rgba($White, 0.98);
       position: relative;
       overflow: hidden;
+      @include xs {
+        height: 320px;
+      }
       &::before {
         // content: '';
         position: absolute;

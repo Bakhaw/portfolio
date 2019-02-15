@@ -3,7 +3,7 @@ import i18n from '../../i18n';
 
 export default function ChangeLanguageButton() {
   const currentLng = window.localStorage.i18nextLng === 'fr-FR' ? 'FR' : 'EN';
-  const flag = currentLng === 'FR' ? 'uk' : 'france';
+  const flag = currentLng === 'FR' ? 'france' : 'uk';
   return (
     <img
       alt='Change language button'

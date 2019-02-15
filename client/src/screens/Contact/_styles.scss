@@ -21,30 +21,27 @@
   align-items: center;
   min-height: $Content__height;
   padding-top: $NavBar__height; // 65px
-  @include xs {
-    padding-top: 50px;
-  }
   .ContactCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 350px;
+    min-height: 330px;
     width: 400px;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     box-shadow: 0 15px 30px 0 rgba($Black, 0.3), 0 5px 15px rgba($Black, 0.06);
     background: rgba($White, 0.98);
     @include xs {
-      width: 320px;
+      width: 75vw;
     }
     .ContactCard__image {
-      height: 200px;
-      width: 200px;
-      transform: translateY(-80px);
+      height: 180px;
+      width: 180px;
+      transform: translateY(-40px);
       @include xs {
-        height: 100px;
-        width: 100px;
-        transform: translateY(-40px);
+        height: 90px;
+        width: 90px;
+        transform: translateY(-30px);
       }
       @include sm {
         height: 120px;
@@ -88,23 +85,22 @@
       height: 100%;
       margin: 0 auto;
       .Form__container__inputs {
-        width: 100%;
+        width: 60vw;
       }
       .TextArea {
         margin-top: 40px;
       }
     }
     .Form__title {
-      font-weight: bold;
       color: $GreenBlack;
       text-transform: uppercase;
       font-size: $FontSize__8;
       width: 100vw;
       text-align: center;
       @include xs {
-        font-size: $FontSize__6;
+        font-size: $FontSize__7;
       }
-      @include xs {
+      @include sm {
         font-size: $FontSize__7;
       }
     }
