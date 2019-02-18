@@ -1,11 +1,9 @@
 require('dotenv').config();
 import express from 'express';
 import cors from 'cors';
+import path from 'path';
 import config from './config';
 import nodemailer from './nodemailer';
-
-// TODO serve client from here
-import path from 'path';
 
 const app = express();
 

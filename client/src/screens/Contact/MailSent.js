@@ -10,7 +10,7 @@ function MailSent() {
       <img
         alt='Mail sent'
         className='MailSent__image'
-        src='assets/images/mail_sent.webp'
+        src='assets/images/mail_sent.png'
       />
     </div>
   );

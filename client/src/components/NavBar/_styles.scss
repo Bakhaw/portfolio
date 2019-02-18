@@ -39,7 +39,6 @@
         text-decoration: none;
         margin: 0 10px;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         background-image: linear-gradient(
           to right,
           $White 50%,
@@ -64,7 +63,6 @@
         }
       }
       .NavBar__NavLinks__NavLink__active {
-        -webkit-text-fill-color: unset;
         color: $White;
         background: $Green;
         border-radius: 50px;

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import config from './config';
+import key from './key';
 import nodemailer from 'nodemailer';
 import smtpTransport from 'nodemailer-smtp-transport';
 
@@ -9,8 +9,8 @@ const transport = {
   service: 'gmail',
   host: 'smtp.gmail.com',
   auth: {
-    user: config.USER,
-    pass: config.PASS
+    user: key.USER,
+    pass: key.PASS
   }
 };
 
@@ -28,7 +28,7 @@ router.post('/sendMail', (req, res, next) => {
   const { from, text } = req.body;
   const mailObject = {
     from,
-    to: config.USER,
+    to: key.USER,
     subject: 'Email from portfolio !',
     html: `${text} <br> <br> Sent by ${from}`
   };
