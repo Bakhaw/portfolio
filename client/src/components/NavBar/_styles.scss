@@ -38,24 +38,8 @@
         height: 30px;
         text-decoration: none;
         margin: 0 10px;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(
-          to right,
-          $White 50%,
-          $White 50%,
-          $GreenGrey 50%
-        );
-        background-size: 200% 100%;
-        background-position: 100%;
-        -webkit-tap-highlight-color: rgba(
-          255,
-          255,
-          255,
-          0
-        ); // Disable blue highlight onTap (makes it transparent)
         &:hover {
-          transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
-          background-position: 0%;
+          color: $White;
         }
         @include xs {
           font-size: $FontSize__3;

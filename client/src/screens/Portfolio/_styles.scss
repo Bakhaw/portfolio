@@ -56,41 +56,39 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        font-size: $FontSize__6;
-        color: $GreenWhite;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(
-          to right,
-          $White 50%,
-          $White 50%,
-          $GreenGrey 50%
-        );
-        background-size: 200% 100%;
-        background-position: 100%;
-        @include md {
-          font-size: $FontSize__5;
-        }
-        &:hover {
-          transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
-          background-position: 0%;
+        h3 {
+          margin: 0;
+          font-size: $FontSize__6;
+          color: $GreenGrey;
+          @include md {
+            font-size: $FontSize__5;
+          }
+          &:hover {
+            color: $White;
+          }
         }
       }
     }
     // ? ITEM ACTIVE
     .Portfolio__list__listitem__active {
       .Portfolio__list__listitem__title {
+        width: 100%;
         transition: 0.5s;
         margin-left: 40px;
-        width: 100%;
-        color: $Green;
-        font-weight: bold;
+        h3 {
+          color: $Green;
+          font-weight: bold;
+          &:hover {
+            color: $Green;
+          }
+        }
         @include md {
           margin-left: 10px;
         }
       }
       .Portfolio__list__listitem__title__explore {
         p {
-          color: $GreenWhite;
+          color: $GreenGrey;
           font-size: $FontSize__3;
           margin: 0;
           @include md {

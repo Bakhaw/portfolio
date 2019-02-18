@@ -20,7 +20,7 @@ export default function List({ handleChangeProject, selectedProject, t }) {
               className='Portfolio__list__listitem__title'
               onClick={() => handleChangeProject(projectName)}
             >
-              {bannerTitle}
+              <h3>{bannerTitle}</h3>
               {isActive && (
                 <Link to={`/project/${projectName}`}>
                   <div className='Portfolio__list__listitem__title__explore'>
