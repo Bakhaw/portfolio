@@ -85,7 +85,16 @@
       height: 100%;
       margin: 0 auto;
       .Form__container__inputs {
-        width: 60vw;
+        width: 20vw;
+        @include xs {
+          width: 60vw;
+        }
+        @include sm {
+          width: 350px;
+        }
+        @include md {
+          width: 350px;
+        }
       }
       .TextArea {
         margin-top: 40px;
