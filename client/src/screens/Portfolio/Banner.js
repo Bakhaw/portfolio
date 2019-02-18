@@ -6,7 +6,7 @@ export default function Banner({ selectedProject }) {
       <img
         alt='Project screen shot'
         className='Portfolio__list__listitem__banner__image'
-        src={`assets/projects/${selectedProject}/banner.webp`}
+        src={`assets/projects/${selectedProject}/banner.png`}
       />
     </div>
   );

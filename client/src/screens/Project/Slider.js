@@ -18,7 +18,7 @@ function Slider({ galleryLength, projectName }) {
       <div>
         <img
           alt={`${projectName} screen shot`}
-          src={`assets/projects/${projectName}/banner.webp`}
+          src={`assets/projects/${projectName}/banner.png`}
         />
       </div>
       {[
@@ -29,7 +29,7 @@ function Slider({ galleryLength, projectName }) {
               <div key={index}>
                 <img
                   alt={`${projectName} screen shot`}
-                  src={`assets/projects/${projectName}/step_${index}.webp`}
+                  src={`assets/projects/${projectName}/step_${index}.png`}
                 />
               </div>
             );
