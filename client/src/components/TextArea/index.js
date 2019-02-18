@@ -3,8 +3,14 @@ import { withNamespaces } from 'react-i18next';
 import Tooltip from '@material-ui/core/Tooltip';
 
 function TextArea({ error, name, onChange, placeholder, t, value }) {
-  const cry = '\u{1F622}';
   const smallScreen = window.screen.width < 767;
+  // ? Tooltip__title className is in main.scss file
+  const tooltipTitle = (
+    <div className='Tooltip__title'>
+      <span>{t('SendEmail__message__error')}</span>
+      <img alt='Crying emoji' src='assets/images/sad.svg' />
+    </div>
+  );
 
   return (
     <div className='TextArea'>
@@ -15,7 +21,7 @@ function TextArea({ error, name, onChange, placeholder, t, value }) {
         className='Tooltip'
         open={smallScreen ? false : error}
         placement='right'
-        title={`${t('SendEmail__message__error')} ${cry}`}
+        title={tooltipTitle}
       >
         <textarea
           name={name}

@@ -24,5 +24,6 @@
   "SendEmail__email__error": "I need to know your email to answer",
   "SendEmail__message__error": "You don't want to send me a message ?",
   "Github__button": "See on Github",
-  "Demo__button": "Try demo"
+  "Demo__button": "Try demo",
+  "MailSent__success": "Your email has been sent successfully !"
 }

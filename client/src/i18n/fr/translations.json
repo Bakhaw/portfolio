@@ -21,8 +21,9 @@
   "Attentive": "Attentif",
   "Enterprising": "Entreprenant",
   "Send": "Envoyer",
-  "SendEmail__email__error": "Je dois connaître votre email pour répondre",
+  "SendEmail__email__error": "Comment je réponds moi si je ne connais pas votre email ?",
   "SendEmail__message__error": "Quoi ? Vous ne voulez pas m'envoyer de message ?",
   "Github__button": "Voir sur Github",
-  "Demo__button": "Voir démo"
+  "Demo__button": "Voir démo",
+  "MailSent__success": "Votre email a bien été envoyé !"
 }

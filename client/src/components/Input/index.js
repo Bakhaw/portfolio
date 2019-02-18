@@ -12,8 +12,14 @@ function Input({
   t,
   value
 }) {
-  const lol = '\u{1F61B}';
   const smallScreen = window.screen.width < 767;
+  // ? Tooltip__title className is in main.scss file
+  const tooltipTitle = (
+    <div className='Tooltip__title'>
+      <span>{t('SendEmail__email__error')}</span>
+      <img alt='Crying emoji' src='assets/images/tongue.svg' />
+    </div>
+  );
   return (
     <div className='Input'>
       {smallScreen && error && (
@@ -24,7 +30,7 @@ function Input({
         className='Input__Tooltip'
         open={smallScreen ? false : error}
         placement='right'
-        title={`${t('SendEmail__email__error')} ${lol}`}
+        title={tooltipTitle}
       >
         <input
           autoFocus={autoFocus}

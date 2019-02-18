@@ -1,11 +1,12 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
-function MailSent() {
+function MailSent({ t }) {
   const joy = '\u{1F389}';
   return (
     <div className='MailSent'>
       <h3>
-        Your email has been sent successfully {joy} {joy}
+        {t('MailSent__success')} {joy} {joy}
       </h3>
       <img
         alt='Mail sent'
@@ -16,4 +17,4 @@ function MailSent() {
   );
 }
 
-export default MailSent;
+export default withNamespaces()(MailSent);
