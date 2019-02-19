@@ -9,9 +9,8 @@
 .Project {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   min-height: $Content__height;
   padding-top: $NavBar__height;
   overflow: hidden;
@@ -40,11 +39,14 @@
   .Project__content {
     display: grid;
     grid-template-columns: 65vw 35vw;
+    margin-top: 30px;
     @include xs {
       grid-template-columns: 100vw;
+      margin: 0;
     }
     @include sm {
       grid-template-columns: 100vw;
+      margin: 0;
     }
     .carousel {
       padding: 0 30px;
