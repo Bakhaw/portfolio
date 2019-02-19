@@ -1,10 +1,13 @@
 import React from 'react';
-import ProfileCard from '../../components/ProfileCard';
+import Loader from '../../components/Loader';
+const ProfileCard = React.lazy(() => import('../../components/ProfileCard'));
 
 function Home() {
   return (
     <div className='Home'>
-      <ProfileCard />
+      <React.Suspense fallback={<Loader />}>
+        <ProfileCard />
+      </React.Suspense>
     </div>
   );
 }

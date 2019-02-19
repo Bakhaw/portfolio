@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import projects from '../../projects';
-import Slider from './Slider';
 import Loader from '../../components/Loader';
-import Description from './Description';
-import Header from './Header';
-import Links from './Links';
-import Technos from './Technos';
+const Slider = React.lazy(() => import('./Slider'));
+const Description = React.lazy(() => import('./Description'));
+const Header = React.lazy(() => import('./Header'));
+const Links = React.lazy(() => import('./Links'));
+const Technos = React.lazy(() => import('./Technos'));
 
 // ! project img screenshots are taken on web (web screen width size = 1366)
 // ! then imgs are resized with mac thing to 1363 x 707
@@ -57,17 +57,19 @@ class Project extends Component {
 
     return (
       <div className='Project'>
-        <Header bannerTitle={bannerTitle} />
-        <div className='Project__content'>
-          <Slider {...currentProject} />
-          <div className='Project__content__description'>
-            <div>
-              <Description currentProject={currentProject} />
-              <Technos currentProject={currentProject} />
+        <React.Suspense fallback={<Loader />}>
+          <Header bannerTitle={bannerTitle} />
+          <div className='Project__content'>
+            <Slider {...currentProject} />
+            <div className='Project__content__description'>
+              <div>
+                <Description currentProject={currentProject} />
+                <Technos currentProject={currentProject} />
+              </div>
+              <Links currentProject={currentProject} />
             </div>
-            <Links currentProject={currentProject} />
           </div>
-        </div>
+        </React.Suspense>
       </div>
     );
   }

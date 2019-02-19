@@ -1,23 +1,30 @@
-import React, { useState } from 'react';
-import Banner from './Banner';
-import List from './List';
-import MobileSlider from './MobileSlider';
+import React from 'react';
+import Loader from '../../components/Loader';
+const Banner = React.lazy(() => import('./Banner'));
+const List = React.lazy(() => import('./List'));
+const MobileSlider = React.lazy(() => import('./MobileSlider'));
 
 function Portfolio() {
-  const [selectedProject, handleChangeProject] = useState('twitch');
+  const [selectedProject, handleChangeProject] = React.useState('twitch');
   const smallScreen = window.screen.width < 767;
 
   if (smallScreen) {
-    return <MobileSlider />;
+    return (
+      <React.Suspense fallback={<Loader />}>
+        <MobileSlider />
+      </React.Suspense>
+    );
   }
 
   return (
     <div className='Portfolio'>
-      <List
-        handleChangeProject={handleChangeProject}
-        selectedProject={selectedProject}
-      />
-      <Banner selectedProject={selectedProject} />
+      <React.Suspense fallback={<Loader />}>
+        <List
+          handleChangeProject={handleChangeProject}
+          selectedProject={selectedProject}
+        />
+        <Banner selectedProject={selectedProject} />
+      </React.Suspense>
     </div>
   );
 }
