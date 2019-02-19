@@ -3,12 +3,14 @@ import { withNamespaces } from 'react-i18next';
 import axios from 'axios';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
-import Spinner from '../../components/Spinner';
+import Loader from '../../components/Loader';
 import TextArea from '../../components/TextArea';
+import MailError from './MailError';
 
 // TODO refactor this with Hooks
 class Form extends Component {
   state = {
+    formError: false, // triggered when no response from server etc..
     isLoading: false,
     email: {
       error: false,
@@ -71,47 +73,50 @@ class Form extends Component {
     })
       .then(async res => {
         if (res.data.msg === 'success') {
-          console.log('sucess');
           await this.toggleLoading(false);
-          this.props.toggleMailSent(true);
+          this.props.toggleSendMailStatus('success');
         }
       })
-      .catch(err => console.log(err)); // TODO handle error here
+      .catch(err => {
+        console.log(err);
+        this.props.toggleSendMailStatus('error');
+      }); // TODO handle error here
   };
 
   render() {
     const { email, isLoading, message } = this.state;
     const { t } = this.props;
 
+    if (isLoading)
+      return (
+        <div className='Form'>
+          <Loader />
+        </div>
+      );
+
     return (
       <div className='Form'>
-        {isLoading ? (
-          <Spinner />
-        ) : (
-          <>
-            <h1 className='Form__title'>{t('Contact me')}</h1>
-            <div className='Form__container'>
-              <div className='Form__container__inputs'>
-                <Input
-                  error={email.error}
-                  name='email'
-                  onChange={this.handleChange}
-                  placeholder='Email'
-                  type='email'
-                  value={email.value}
-                />
-                <TextArea
-                  error={message.error}
-                  name='message'
-                  onChange={this.handleChange}
-                  placeholder='Message...'
-                  value={message.value}
-                />
-              </div>
-              <Button onClick={this.checkFormErrors}>{t('Send')}</Button>
-            </div>
-          </>
-        )}
+        <h1 className='Form__title'>{t('Contact me')}</h1>
+        <div className='Form__container'>
+          <div className='Form__container__inputs'>
+            <Input
+              error={email.error}
+              name='email'
+              onChange={this.handleChange}
+              placeholder='Email'
+              type='email'
+              value={email.value}
+            />
+            <TextArea
+              error={message.error}
+              name='message'
+              onChange={this.handleChange}
+              placeholder='Message...'
+              value={message.value}
+            />
+          </div>
+          <Button onClick={this.checkFormErrors}>{t('Send')}</Button>
+        </div>
       </div>
     );
   }

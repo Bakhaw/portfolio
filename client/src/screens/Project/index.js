@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import projects from '../../projects';
 import Slider from './Slider';
-import Spinner from '../../components/Spinner';
+import Loader from '../../components/Loader';
 import Description from './Description';
 import Header from './Header';
 import Links from './Links';
@@ -49,7 +49,7 @@ class Project extends Component {
     if (currentProject === null || isLoading)
       return (
         <div className='Project__Spinner'>
-          <Spinner />
+          <Loader />
         </div>
       );
 

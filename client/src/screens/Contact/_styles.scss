@@ -1,3 +1,30 @@
+.MailError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 85vw;
+  img {
+    height: auto;
+    width: 250px;
+  }
+  h3 {
+    font-size: $FontSize__5;
+    text-align: center;
+  }
+  span {
+    cursor: pointer;
+    color: $Green;
+    text-decoration: underline;
+    font-size: $FontSize__4;
+    font-weight: bold;
+    &:hover {
+      color: $GreenDark;
+    }
+  }
+}
+
 .MailSent {
   display: flex;
   flex-direction: column;
