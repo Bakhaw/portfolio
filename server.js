@@ -1,11 +1,14 @@
 require('dotenv').config();
 import express from 'express';
+import compression from 'compression';
 import cors from 'cors';
 import path from 'path';
 import config from './config';
 import nodemailer from './nodemailer';
 
 const app = express();
+
+app.use(compression());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());

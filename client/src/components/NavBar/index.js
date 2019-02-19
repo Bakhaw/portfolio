@@ -10,9 +10,9 @@ function NavBar({ t }) {
       <div className='NavBar__NavLinks'>
         <ul>
           {routes.map(({ text, to }, index) => (
-            <NavLink key={index} to={to}>
-              {t(text)}
-            </NavLink>
+            <li key={index}>
+              <NavLink to={to}>{t(text)}</NavLink>
+            </li>
           ))}
         </ul>
         <ChangeLanguageButton />
