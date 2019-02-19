@@ -8,10 +8,27 @@
     font-size: $FontSize__7;
     color: $GreenBlack;
     text-align: center;
+    @include xs {
+      font-size: $FontSize__6;
+    }
   }
   img {
     height: auto;
     width: 300px;
+    @include xs {
+      width: 220px;
+    }
+  }
+  a {
+    width: 100%;
+    .Button {
+      margin-top: 50px;
+      @include xs {
+        span {
+          font-size: $FontSize__3;
+        }
+      }
+    }
   }
 }
 
@@ -119,23 +136,12 @@
       display: flex;
       align-items: center;
       align-self: flex-end;
-      background: linear-gradient(
-        to left,
-        $Green 50%,
-        $GreenDark 50%
-      ) !important;
-      background-size: 200% 100% !important;
-      background-position: right bottom !important;
-      transition: all 0.35s ease;
       transform: translateY(60px);
       @include xs {
         transform: translateY(30px);
       }
       @include md {
         transform: translateY(50px);
-      }
-      &:hover {
-        background-position: left bottom !important;
       }
     }
   }

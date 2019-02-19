@@ -1,18 +1,20 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import Link from 'react-router-dom/Link';
+import Button from '../../components/Button';
 
 function MailSent({ t }) {
-  const joy = '\u{1F389}';
   return (
     <div className='MailSent'>
-      <h3>
-        {t('MailSent__success')} {joy} {joy}
-      </h3>
+      <h3>{t('MailSent__success')}</h3>
       <img
         alt='Mail sent'
         className='MailSent__image'
         src='assets/images/send-mail-success.svg'
       />
+      <Link to='/'>
+        <Button>Retour au menu</Button>
+      </Link>
     </div>
   );
 }

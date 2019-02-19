@@ -84,7 +84,6 @@
       }
       .thumbs-wrapper {
         width: 60vw;
-        margin: 20px 0;
         @include xs {
           width: 100%;
         }
@@ -172,37 +171,21 @@
       }
       .Project__links {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         grid-row: 5;
         @include md {
           flex-direction: column;
         }
         li {
-          margin-right: 15px;
+          width: 100%;
+          max-width: 350px;
+          margin: 10px auto;
           @include md {
             margin-top: 15px;
           }
-          a {
-            .Button {
-              background: $Green;
-              padding: 10px 20px;
-              background: linear-gradient(
-                to left,
-                $Green 50%,
-                $GreenDark 50%
-              ) !important;
-              background-size: 200% 100% !important;
-              background-position: right bottom !important;
-              transition: all 0.35s ease;
-              span {
-                font-size: $FontSize__3;
-                @include xs {
-                  font-size: $FontSize__1;
-                }
-              }
-              &:hover {
-                background-position: left bottom !important;
-              }
-            }
+          a .Button span {
+            font-size: $FontSize__3;
           }
         }
         .Project__links__button__disabled {

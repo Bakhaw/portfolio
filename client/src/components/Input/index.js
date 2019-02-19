@@ -3,16 +3,7 @@ import { withNamespaces } from 'react-i18next';
 import classNames from 'classnames';
 import Tooltip from '@material-ui/core/Tooltip';
 
-function Input({
-  autoFocus,
-  error,
-  name,
-  onChange,
-  placeholder,
-  type,
-  t,
-  value
-}) {
+function Input({ error, name, onChange, placeholder, type, t, value }) {
   const smallScreen = window.screen.width < 767;
   // ? Tooltip__title className is in main.scss file
   const tooltipTitle = (
@@ -34,7 +25,6 @@ function Input({
         title={tooltipTitle}
       >
         <input
-          autoFocus={autoFocus}
           className={classNames(error && 'Input__error')}
           name={name}
           onChange={onChange}
