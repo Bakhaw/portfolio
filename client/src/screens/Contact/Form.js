@@ -80,7 +80,7 @@ class Form extends Component {
       .catch(err => {
         console.log(err);
         this.props.toggleSendMailStatus('error');
-      }); // TODO handle error here
+      });
   };
 
   render() {
