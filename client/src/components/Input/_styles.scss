@@ -16,10 +16,16 @@
   }
 }
 
+.Input__error {
+  border: 2px solid $Red !important;
+  background: rgba($Red, 0.4) !important;
+}
+
+// ? Red error check showing only on small screens
 .Input__error__image {
-  height: 26px;
-  width: 26px;
-  transform: translateX(-50px);
+  height: 18px;
+  width: 18px;
+  transform: translateX(-22px);
   position: absolute;
 }
 

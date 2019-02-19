@@ -54,8 +54,13 @@
         margin: 0;
         padding: 5px 10px;
         font-weight: bold;
+        transition: 0.3s;
         @include xs {
-          min-width: 75px;
+          min-width: unset;
+          background: unset;
+          border-radius: unset;
+          border-top: 3px solid $Green;
+          color: $GreenWhite;
         }
       }
     }

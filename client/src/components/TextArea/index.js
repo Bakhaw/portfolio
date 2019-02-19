@@ -1,5 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import classNames from 'classnames';
 import Tooltip from '@material-ui/core/Tooltip';
 
 function TextArea({ error, name, onChange, placeholder, t, value }) {
@@ -24,6 +25,7 @@ function TextArea({ error, name, onChange, placeholder, t, value }) {
         title={tooltipTitle}
       >
         <textarea
+          className={classNames(error && 'TextArea__error')}
           name={name}
           onChange={onChange}
           placeholder={placeholder}

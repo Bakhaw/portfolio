@@ -25,5 +25,11 @@
   "SendEmail__message__error": "Quoi ? Vous ne voulez pas m'envoyer de message ?",
   "Github__button": "Voir sur Github",
   "Demo__button": "Voir démo",
-  "MailSent__success": "Votre email a bien été envoyé !"
+  "MailSent__success": "Votre email a bien été envoyé !",
+  "Twitch__description": "« Twitch remake » - En tant que fan de jeux-vidéos, je me suis donné le challenge de refaire l'interface Twitch. Premier vrai projet utilisant React / Redux.",
+  "Football__description": "Première interface web sur laquelle j'utilise une API externe de football et premier challenge en terme d'UI design.",
+  "Calendar__description": "Interface utilisée par une école de danse parisienne (Choreia) leur permettant de gérer leur planning.",
+  "Hipipin__description": "Interface réalisée en deux jours lors d'un Hackathon aux côtés de divers profil (développeurs, designers, experts accessibilité)",
+  "Avocado__description": "Projet fullstack (MERN) présenté devant un jury, pour la certification professionnelle de fin d'alternance.",
+  "Netflix__description": "Utilisation d'une API de films externe et inspiration Netflix. Ce projet m'a servi de base pour tester les nouvelles features React.js (Hooks)"
 }

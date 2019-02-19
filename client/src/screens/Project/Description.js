@@ -1,9 +1,12 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
-export default function Description({ currentProject }) {
+function Description({ currentProject, t }) {
   return (
     <div>
-      <p>{currentProject.description}</p>
+      <p>{t(currentProject.description)}</p>
     </div>
   );
 }
+
+export default withNamespaces()(Description);

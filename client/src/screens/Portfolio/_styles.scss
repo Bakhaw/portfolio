@@ -1,7 +1,6 @@
 // *** MOBILE SLIDER ***
 .MobileSlider {
-  min-height: $Content__height;
-  margin-top: 30px;
+  margin-top: 15px;
   padding-top: $NavBar__height;
   * {
     background: $Black !important;
@@ -15,7 +14,7 @@
       background: $GreenWhite !important;
     }
   }
-  img {
+  .MobileSlider__media {
     height: 300px;
   }
   .MobileSlider__title {
@@ -30,7 +29,7 @@
     }
     span {
       color: $GreenWhite;
-      font-size: $FontSize__2;
+      font-size: $FontSize__3;
     }
   }
 }

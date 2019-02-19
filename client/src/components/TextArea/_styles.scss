@@ -16,9 +16,14 @@
   }
 }
 
+.TextArea__error {
+  border: 2px solid $Red !important;
+  background: rgba($Red, 0.4) !important;
+}
+
 .TextArea__error__image {
-  height: 26px;
-  width: 26px;
-  transform: translateX(-50px);
+  height: 18px;
+  width: 18px;
+  transform: translateX(-22px);
   position: absolute;
 }

@@ -1,6 +1,7 @@
 // {
 // ? backgroundColor = couleur du fond de la carte et du bouton
 // ? bannerTitle = titre de la carte
+// ? description = clé i18n de la desription du projet
 // ? galleryLength = nombre d'images pour le carousel
 // ! pour galleryLength les images commencent à step_0 et non pas step_1
 // ? href = lien du projet
@@ -11,8 +12,7 @@ const projects = [
   {
     backgroundColor: 'rgba(75, 54, 124, 0.85)',
     bannerTitle: 'Twitch',
-    description:
-      'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    description: 'Twitch__description', // ? i18n
     galleryLength: 4,
     links: {
       github: 'https://github.com/Bakhaw/twitch-app',
@@ -24,8 +24,7 @@ const projects = [
   {
     backgroundColor: 'rgba(136, 167, 127, 0.85)',
     bannerTitle: 'Football',
-    description:
-      'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    description: 'Football__description', // ? i18n
     galleryLength: 5,
     links: {
       github: 'https://github.com/Bakhaw/football-app',
@@ -37,8 +36,7 @@ const projects = [
   {
     backgroundColor: 'rgba(63, 81, 181, 0.85)',
     bannerTitle: 'Calendar',
-    description:
-      'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    description: 'Calendar__description', // ? i18n
     galleryLength: 10,
     links: {
       github: 'https://github.com/Bakhaw/cld-peda',
@@ -59,8 +57,7 @@ const projects = [
   {
     backgroundColor: 'rgba(62, 70, 85, 0.85)',
     bannerTitle: 'Hipin In',
-    description:
-      'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    description: 'Hipipin__description', // ? i18n
     galleryLength: 10,
     links: {
       github: 'https://github.com/Bakhaw/Hipip-In',
@@ -80,8 +77,7 @@ const projects = [
   {
     backgroundColor: 'rgba(226, 54, 68, 0.75)',
     bannerTitle: 'Avocado',
-    description:
-      'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    description: 'Avocado__description', // ? i18n
     galleryLength: 13,
     links: {
       github: 'https://github.com/Bakhaw/avocado',
@@ -100,8 +96,7 @@ const projects = [
   {
     backgroundColor: 'rgba(20, 20, 20, 0.90)',
     bannerTitle: 'Netflix',
-    description:
-      'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    description: 'Netflix__description', // ? i18n
     galleryLength: 2,
     links: {
       github: 'https://github.com/Bakhaw/flouflix',

@@ -32,16 +32,16 @@
     box-shadow: 0 15px 30px 0 rgba($Black, 0.3), 0 5px 15px rgba($Black, 0.06);
     background: rgba($White, 0.98);
     @include xs {
-      width: 75vw;
+      width: 85vw;
     }
     .ContactCard__image {
       height: 180px;
       width: 180px;
-      transform: translateY(-40px);
+      transform: translateY(-90px);
       @include xs {
-        height: 90px;
-        width: 90px;
-        transform: translateY(-30px);
+        height: 100px;
+        width: 100px;
+        transform: translateY(-50px);
       }
       @include sm {
         height: 120px;
@@ -85,9 +85,9 @@
       height: 100%;
       margin: 0 auto;
       .Form__container__inputs {
-        width: 20vw;
+        width: 18vw;
         @include xs {
-          width: 60vw;
+          width: 70vw;
         }
         @include sm {
           width: 350px;
@@ -102,12 +102,14 @@
     }
     .Form__title {
       color: $GreenBlack;
+      font-weight: bold;
       text-transform: uppercase;
-      font-size: $FontSize__8;
+      font-size: $FontSize__7;
       width: 100vw;
       text-align: center;
+      margin: 15px 0 25px 0;
       @include xs {
-        font-size: $FontSize__7;
+        font-size: $FontSize__6;
       }
       @include sm {
         font-size: $FontSize__7;
@@ -125,15 +127,12 @@
       background-size: 200% 100% !important;
       background-position: right bottom !important;
       transition: all 0.35s ease;
-      transform: translateY(50px);
+      transform: translateY(60px);
       @include xs {
         transform: translateY(30px);
       }
-      @include sm {
-        transform: translateY(45px);
-      }
       @include md {
-        transform: translateY(45px);
+        transform: translateY(50px);
       }
       &:hover {
         background-position: left bottom !important;

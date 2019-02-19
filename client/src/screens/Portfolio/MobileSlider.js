@@ -20,6 +20,7 @@ export default function MobileSlider() {
             <div>
               <img
                 alt={`${projectName} screen shot`}
+                className='MobileSlider__media'
                 src={`assets/projects/${projectName}/banner.png`}
               />
             </div>

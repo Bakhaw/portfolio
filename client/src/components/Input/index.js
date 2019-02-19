@@ -1,5 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import classNames from 'classnames';
 import Tooltip from '@material-ui/core/Tooltip';
 
 function Input({
@@ -34,6 +35,7 @@ function Input({
       >
         <input
           autoFocus={autoFocus}
+          className={classNames(error && 'Input__error')}
           name={name}
           onChange={onChange}
           placeholder={placeholder}
