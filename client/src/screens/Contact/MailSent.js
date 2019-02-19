@@ -11,7 +11,7 @@ function MailSent({ t }) {
       <img
         alt='Mail sent'
         className='MailSent__image'
-        src='assets/images/mail_sent.png'
+        src='assets/images/send-mail-success.svg'
       />
     </div>
   );
